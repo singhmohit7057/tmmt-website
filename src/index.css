@@ -1,0 +1,25 @@
+:root {
+  --apple-bg: #ffffff;
+  --apple-footer: #f5f5f7; /* Classic Apple light gray footer */
+  --apple-text: #1d1d1f;
+  --apple-subtext: #86868b;
+  --apple-accent: #0071e3; /* San Francisco Blue */
+  --apple-nav-bg: rgba(255, 255, 255, 0.8); /* Translucent effect */
+}
+
+body {
+  background-color: var(--apple-bg);
+  color: var(--apple-text);
+  margin: 0;
+  -webkit-font-smoothing: antialiased; /* Smoother text like macOS */
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-container {
+  display: flex;
+  width: fit-content;
+  animation: marquee 30s linear infinite;
+}
