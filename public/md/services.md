@@ -1,43 +1,65 @@
 ---
 title: TMMT Services
-description: Ecommerce automation and operational infrastructure services
+description: Ecommerce automation, web engineering, marketplace infrastructure, branding, ads, and social media
 url: https://www.tmmt.in/services
 canonical: https://www.tmmt.in/services
 ---
 
 # TMMT Services
 
-## Automation Services
+## 01 / Web Engineering
 
-Marketplace and ecommerce operational automation systems.
+React, TypeScript, and Vite websites built for fast load times, mobile rendering, and Core Web Vitals scores of 100.
 
-## Ecommerce Operations
+URL: https://www.tmmt.in/services/web-design
 
-Seller infrastructure and marketplace workflow systems.
+Projects: Ecomsathi, Label Muskaan Singh, Johar Foundation, GrabOffer, Muskaan Singh, WashMate, 100 Year Clock
 
-## Web Design
+## 02 / Automation
 
-Performance-focused ecommerce websites and operational interfaces.
+Custom Python-FastAPI engines for ecommerce operations — label processing, settlement reconciliation, inventory scrapers, and workflow automation.
 
-## Branding
+URL: https://www.tmmt.in/services/automation
 
-Brand identity systems for ecommerce businesses.
+Tools: Label Processor 2.0 (90% labor reduction), Myntra Reconcile (zero human error)
+Tech: Python, FastAPI, OpenCV, Selenium, Pandas, AWS
 
-## Social Media
+## 03 / Marketplace Infrastructure
 
-Content systems and social commerce support.
+Full setup and management of seller presence across Amazon, Myntra, Flipkart, Ajio, and Meesho — catalog, inventory sync, FBA/FBF, and settlement reconciliation. 7–10 days from registration to first sale.
 
-## Ads Management
+URL: https://www.tmmt.in/services/ecommerce-help
 
-Marketplace advertising operations and ecommerce ad workflows.
+Case Study: Ibtida — live on 4 platforms from day one.
 
-## Core Service Areas
+## 04 / Brand Architecture
 
-- inventory synchronization
-- marketplace automation
-- operational dashboards
-- seller workflow systems
-- product feed automation
-- catalog management
-- API integrations
-- order routing
+GST registration, HSN mapping, trademark filing, APOB setup, current account, domain procurement, and marketplace onboarding.
+
+URL: https://www.tmmt.in/services/branding
+
+Projects: IBTIDA (fashion brand scaling), Amoha Civil (construction business setup)
+
+## 05 / Performance Marketing
+
+Meta and Google Ads management with server-side CAPI tracking, audience exclusion logic, and ROAS-focused campaign architecture.
+
+URL: https://www.tmmt.in/services/ads-management
+
+Tech: Meta CAPI, GTM Server-Side, BigQuery, Python bid scripts
+Avg ROAS: 4.52x
+
+## 06 / Social Media
+
+End-to-end social media management — 4K cinematic reels, posts, captions, scheduling, and organic growth across Instagram, YouTube Shorts, LinkedIn, X, and Pinterest.
+
+URL: https://www.tmmt.in/services/social-media
+
+## Industries
+
+- Fashion Brands
+- D2C Businesses
+- Apparel Manufacturers
+- Marketplace Sellers
+- Nonprofits
+- SaaS Products

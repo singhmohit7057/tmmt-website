@@ -62,12 +62,12 @@ const WebDesign: React.FC = () => {
 
   const projects = [
     {
-      label: "Ecom All in one Platform",
+      label: "BUILDING NOW",
       title: "Ecomsathi",
-      desc: "Comprehensive toolkit featuring SKU generation, label cropping, and batch PDF tools optimized for multi-platform sellers.",
-      tech: ["Vite", "React", "TypeScript", "FastApi"],
+      desc: "An all-in-one ecommerce operations platform being built by TMMT — SKU generation, label cropping, batch PDF tools, and seller workflows unified into a single interface.",
+      tech: ["Vite", "React", "TypeScript", "FastAPI", "SupaBase", "Railway"],
       image: "/services/ecomsathi.png",
-      link: null // No link yet
+      link: "https://ecomsathi.vercel.app/"
     },
     {
       label: "FINISHED PROJECT",
@@ -92,6 +92,22 @@ const WebDesign: React.FC = () => {
       tech: ["Vite", "React", "TypeScript", "Vercel"],
       image: "/services/graboffer.png",
       link: "https://graboffer.vercel.app"
+    },
+    {
+      label: "PORTFOLIO WEBSITE",
+      title: "Muskaan Singh",
+      desc: "Personal portfolio for fashion designer Muskaan Singh — minimal, editorial layout with smooth transitions and full mobile responsiveness.",
+      tech: ["React", "Vite", "TypeScript", "Vercel", "Web3Forms"],
+      image: "/services/muskaansingh.png",
+      link: "https://www.muskaansingh.in"
+    },
+    {
+      label: "SAAS PRODUCT",
+      title: "WashMate",
+      desc: "A laundry service management platform with booking flows, order tracking, and a clean dashboard built for speed and simplicity.",
+      tech: ["React", "Vite", "TypeScript", "Vercel", "SupaBase"],
+      image: "/services/washmate.png",
+      link: "https://washmate-tawny.vercel.app/"
     },
     {
       label: "INTERACTIVE BUILD",

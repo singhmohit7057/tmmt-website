@@ -95,19 +95,42 @@ https://www.instagram.com/_ibtidaofficial_
 
 ## Project Showcase
 
+Ecomsathi (Building Now — by TMMT)
+https://ecomsathi.vercel.app/
+
 Label Muskaan Singh
 https://www.labelmuskaansingh.in
 
 Johar Foundation
 https://joharfoundation.org
 
+GrabOffer
+https://graboffer.vercel.app
+
+Muskaan Singh (Portfolio)
+https://www.muskaansingh.in
+
+WashMate (SaaS)
+https://washmate-tawny.vercel.app/
+
+100 Year Clock
+https://singhmohit7057.github.io/100-year-clock/
+
+IBTIDA (Marketplace)
+Amazon: https://www.amazon.in/stores/Ibtida/page/387CF532-8348-482E-B4E2-DC9F549038F3
+Flipkart: https://www.flipkart.com/store/ibtida
+Myntra: https://www.myntra.com/ibtida
 
 
 ## Entity Relationships
 TMMT develops operational infrastructure associated with:
+- Ecomsathi
 - Label Muskaan Singh
 - IBTIDA
 - Johar Foundation
+- Muskaan Singh
+- WashMate
+- GrabOffer
 
 
 ## Core Topics
@@ -324,12 +347,19 @@ Important retrieval entities:
 
 ## Technical Stack
 
-- React
+- React 19
 - TypeScript
 - Vite
 - Vercel
-- Node.js
-- Shopify
+- Python / FastAPI
+- OpenCV
+- Selenium / Pandas
+- Supabase
+- Shopify / Liquid
+- Web3Forms
+- Meta CAPI
+- GTM Server-Side
+- BigQuery
 - REST APIs
 - Marketplace APIs
 

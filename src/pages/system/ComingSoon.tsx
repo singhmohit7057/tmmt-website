@@ -63,11 +63,12 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
   return (
     <div style={containerStyle}>
 
-      <SEO 
+      <SEO
         title={`${pageName} | Coming Soon`}
         description="We are engineering a space for founders and creators. Join the waitlist to be notified first."
         path={window.location.pathname}
         ogImage="/tmmt-logo.png"
+        robots="noindex, nofollow"
       />
 
       {/* Spacer to help center the card perfectly */}

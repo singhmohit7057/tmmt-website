@@ -26,6 +26,9 @@ Allow: /harsh-aggarwal
 # services Pages
 Allow: /services/
 
+# Other Pages
+Allow: /careers
+
 # Legal Pages
 Allow: /privacy-policy
 Allow: /terms-and-conditions
@@ -44,6 +47,10 @@ Allow: /llms-full.txt
 # ====================================================================
 # BLOCK LOW VALUE OR SYSTEM ROUTES
 # ====================================================================
+
+# Coming Soon / Waitlist Pages (noindex, not for Google)
+Disallow: /community
+Disallow: /services/soon
 
 # Internal System Routes
 Disallow: /system/

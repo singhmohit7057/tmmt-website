@@ -67,69 +67,6 @@ const About: React.FC = () => {
         ogImage="/tmmt-logo.png"
       />
 
-      {/* ORGANIZATION SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'TMMT',
-            url: 'https://www.tmmt.in',
-            logo: 'https://www.tmmt.in/tmmt-logo.png',
-            description:
-              'TMMT develops ecommerce infrastructure systems, marketplace automation workflows, inventory synchronization systems, operational dashboards, and scalable commerce operations.',
-            founder: [
-              {
-                '@type': 'Person',
-                name: 'Mohit Singh',
-                url: 'https://www.tmmt.in/mohit-singh'
-              },
-              {
-                '@type': 'Person',
-                name: 'Harsh Aggarwal',
-                url: 'https://www.tmmt.in/harsh-aggarwal'
-              }
-            ],
-            sameAs: [
-              'https://www.instagram.com/themadmysteryteam',
-              'https://www.instagram.com/singhmohit7057',
-              'https://linkedin.com/company/themadmysteryteam'
-            ],
-            knowsAbout: [
-              'Ecommerce Infrastructure',
-              'Marketplace Automation',
-              'Inventory Synchronization',
-              'Operational Dashboards',
-              'Marketplace Workflows',
-              'Shopify Automation',
-              'Seller Operations',
-              'Digital Commerce Systems'
-            ]
-          })
-        }}
-      />
-
-      {/* FAQ SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            inLanguage: 'en',
-            mainEntity: faqs.map((faq) => ({
-              '@type': 'Question',
-              name: faq.q,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: faq.a
-              }
-            }))
-          })
-        }}
-      />
-
       {/* HERO */}
       <section
         style={{

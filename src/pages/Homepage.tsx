@@ -115,19 +115,19 @@ const Homepage: React.FC = () => {
   const techStack = [
     {
       category: 'Frontend',
-      techs: ['React', 'Vite', 'TypeScript', 'Tailwind']
+      techs: ['React', 'Vite', 'TypeScript', 'JavaScript']
     },
     {
       category: 'Backend',
-      techs: ['Python', 'FastAPI', 'PostgreSQL', 'REST APIs']
+      techs: ['Python', 'FastAPI', 'Supabase', 'SQL', 'REST APIs', 'Web3Forms', 'Google Script']
     },
     {
       category: 'Infrastructure',
-      techs: ['Docker', 'AWS', 'CI/CD', 'Cloud Deployments']
+      techs: ['Vercel', 'AWS', 'OpenCV', 'Selenium']
     },
     {
       category: 'Platforms',
-      techs: ['Shopify', 'Myntra', 'Amazon', 'Flipkart', 'Meesho']
+      techs: ['Shopify', 'Myntra', 'Amazon', 'Flipkart', 'Meesho', 'Ajio']
     }
   ];
 
@@ -168,68 +168,6 @@ const Homepage: React.FC = () => {
         author="TMMT Team"
         type="website"
         ogImage="/tmmt-logo.png"
-      />
-
-      {/* ORGANIZATION SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'TMMT',
-            url: 'https://www.tmmt.in',
-            logo: 'https://www.tmmt.in/tmmt-logo.png',
-            description:
-              'TMMT engineers custom web applications, backend automation platforms, inventory synchronization systems, and data-driven marketplace infrastructure for modern digital brands.',
-            sameAs: [
-              'https://instagram.com/themadmysteryteam',
-              'https://www.instagram.com/singhmohit7057'
-            ],
-            founder: [
-              {
-                '@type': 'Person',
-                name: 'Mohit Singh',
-                url: 'https://www.tmmt.in/mohit-singh'
-              },
-              {
-                '@type': 'Person',
-                name: 'Harsh Aggarwal',
-                url: 'https://www.tmmt.in/harsh-aggarwal'
-              }
-            ],
-            areaServed: 'Worldwide',
-            knowsAbout: [
-              'Web Engineering',
-              'Custom Application Development',
-              'Ecommerce Automation',
-              'Marketplace Infrastructure',
-              'Inventory Synchronization',
-              'Seller Operations',
-              'FastAPI Systems',
-              'React Dashboards'
-            ]
-          })
-        }}
-      />
-
-      {/* FAQ SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqs.map(faq => ({
-              '@type': 'Question',
-              name: faq.q,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: faq.a
-              }
-            }))
-          })
-        }}
       />
 
       {/* HERO SECTION */}

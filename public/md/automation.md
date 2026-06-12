@@ -1,62 +1,73 @@
 ---
 title: Ecommerce Automation Services
-description: Marketplace automation infrastructure and operational workflow systems
+description: Python-FastAPI workflow automation for ecommerce operations and marketplace workflows
 url: https://www.tmmt.in/services/automation
 canonical: https://www.tmmt.in/services/automation
 ---
 
 # Ecommerce Automation Services
 
-TMMT develops automation systems for ecommerce operations and marketplace workflows.
+TMMT builds proprietary Python engines that eliminate manual data entry, logistics bottlenecks, and settlement errors. Automation reduces 4+ hours of daily manual work to under 90 seconds.
+
+## Tech Stack
+
+- Python 3.14
+- FastAPI
+- OpenCV
+- Selenium
+- Pandas
+- AWS
+- Zapier
+- n8n
 
 ## Automation Capabilities
 
-- inventory synchronization
-- catalog automation
-- seller workflows
-- operational dashboards
-- marketplace integrations
-- order routing
-- warehouse synchronization
-- product feed automation
+- Shipping label processing and batch cropping
+- Multi-platform inventory synchronization
+- Settlement reconciliation and dispute filing
+- Marketplace data scraping
+- Buyer pincode extraction for ad targeting
+- Order routing and warehouse sync
+- Product feed automation
+- Custom workflow engines
 
-## Supported Platforms
+## Architecture
 
-- Shopify
-- Myntra
-- Amazon
-- Flipkart
-- Ajio
-- Meesho
+### Step 01: Ingestion
+Headless scraping or API fetching from marketplaces and portals.
 
-## Core Systems
+### Step 02: Logic Engine
+Python-driven data processing — classification, transformation, error detection.
 
-### Inventory Synchronization
+### Step 03: Deployment
+Sync to ERP, Google Sheets, cloud storage, or downstream APIs.
 
-Real-time stock synchronization across multiple ecommerce platforms.
+## Projects
 
-### Catalog Management
+### Label Processor 2.0
 
-Marketplace-ready catalog processing and operational workflows.
+Type: Proprietary Tool
+Description: Custom Python-FastAPI engine for multi-platform shipping label segregation. Automates batch cropping and customizable output sizing.
+Result: 90% reduction in manual warehouse labor
+Tech: Python 3.14, FastAPI, OpenCV
 
-### Order Routing
+### Myntra Reconcile
 
-Operational systems for order flow automation.
-
-### Seller Operations
-
-Marketplace seller workflow infrastructure and automation systems.
+Type: Data Integrity Tool
+Description: Automated scraper and processor that reconciles Myntra monthly reports into Google Sheets. Tracks orders, returns, and scrapes buyer pincodes to build custom targeting audiences for Meta and Google Ads.
+Result: Zero human error in reconciliation
+Tech: Selenium, Pandas, AWS
 
 ## FAQ
 
 ### What is marketplace automation?
 
-Automation systems for ecommerce operations and seller workflows.
+Automation systems that handle ecommerce operations — label processing, inventory sync, settlement checks — without manual intervention.
 
 ### What is inventory synchronization?
 
-Inventory synchronization keeps stock levels updated across all selling channels.
+Real-time stock level updates pushed across all active selling channels simultaneously.
 
-### Does TMMT build custom workflows?
+### Can TMMT build custom automation for our workflow?
 
-Yes. TMMT develops custom operational infrastructure systems.
+Yes. TMMT designs and deploys custom Python engines for any repeatable ecommerce operation.
