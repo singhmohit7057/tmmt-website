@@ -3,6 +3,8 @@ const WEB3_ENDPOINT = "https://api.web3forms.com/submit";
 const ACCESS_KEYS = {
   contact: import.meta.env.VITE_WEB3_CONTACT_KEY,
   notify: import.meta.env.VITE_WEB3_NOTIFY_KEY,
+  mohit: import.meta.env.VITE_WEB3_MOHIT_KEY,
+  harsh: import.meta.env.VITE_WEB3_HARSH_KEY,
 };
 
 const GOOGLE_SHEET_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;

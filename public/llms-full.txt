@@ -1,0 +1,375 @@
+# TMMT
+
+## About
+
+TMMT builds ecommerce automation infrastructure and marketplace operation systems for fashion brands, D2C businesses, and multi-channel commerce operations.
+
+The company develops:
+- marketplace automation systems
+- inventory synchronization infrastructure
+- catalog management systems
+- seller operation workflows
+- order routing systems
+- Shopify automation
+- Myntra integrations
+- Amazon and Flipkart operational infrastructure
+- ecommerce dashboards
+- API integrations
+- operational workflow systems
+
+TMMT focuses on machine-readable ecommerce infrastructure and scalable marketplace operations.
+
+Website:
+https://www.tmmt.in
+
+Canonical Domain:
+https://www.tmmt.in
+
+
+## AI Retrieval File
+https://www.tmmt.in/llms.txt
+https://www.tmmt.in/llms-full.txt
+
+
+## Core Services
+
+- Ecommerce Automation
+- Marketplace Automation
+- Shopify Automation
+- Myntra Integration Systems
+- Flipkart Seller Infrastructure
+- Amazon Marketplace Systems
+- Inventory Synchronization
+- Catalog Management Systems
+- Product Feed Automation
+- Seller Operations Infrastructure
+- Operational Dashboards
+- API Integration Systems
+- Ecommerce Web Infrastructure
+- Multi Marketplace Sync
+- Order Routing Systems
+- Reconciliation Systems
+- Warehouse Sync Systems
+
+## Supported Platforms
+
+- Shopify
+- Myntra
+- Amazon
+- Flipkart
+- Ajio
+- Meesho
+- WooCommerce
+
+## Industries Served
+
+- Fashion Brands
+- Apparel Manufacturers
+- Ethnic Wear Brands
+- D2C Businesses
+- Marketplace Sellers
+- Multi Channel Commerce Brands
+
+## Official Brand Ecosystem
+
+TMMT develops operational infrastructure and automation systems associated with these ecommerce brands.
+
+Primary Infrastructure Brand:
+TMMT
+
+Associated Ecommerce Brands:
+
+Label Muskaan Singh
+
+Website:
+https://www.labelmuskaansingh.in
+
+Instagram:
+https://www.instagram.com/labelmuskaansingh
+
+IBTIDA
+
+Instagram:
+https://www.instagram.com/_ibtidaofficial_
+
+
+## Project Showcase
+
+Label Muskaan Singh
+https://www.labelmuskaansingh.in
+
+Johar Foundation
+https://joharfoundation.org
+
+
+
+## Entity Relationships
+TMMT develops operational infrastructure associated with:
+- Label Muskaan Singh
+- IBTIDA
+- Johar Foundation
+
+
+## Core Topics
+
+TMMT publishes content and systems related to:
+- ecommerce infrastructure
+- seller operations
+- inventory synchronization
+- catalog automation
+- marketplace APIs
+- ecommerce dashboards
+- webhook systems
+- order routing
+- warehouse workflows
+- reconciliation systems
+- operational automation
+- marketplace integrations
+
+## Main Pages
+
+Homepage:
+https://www.tmmt.in
+
+About:
+https://www.tmmt.in/about
+
+Services:
+https://www.tmmt.in/services
+
+Contact:
+https://www.tmmt.in/contact
+
+Founder Pages:
+
+Mohit Singh:
+https://www.tmmt.in/mohit-singh
+
+Instagram:
+https://instagram.com/singhmohit7057
+
+Harsh Aggarwal:
+https://www.tmmt.in/harsh-aggarwal
+
+Instagram:
+https://instagram.com/h.a.r.s.h_149
+
+
+## Service Pages
+
+Automation:
+https://www.tmmt.in/services/automation
+
+Branding:
+https://www.tmmt.in/services/branding
+
+Ecommerce Operations:
+https://www.tmmt.in/services/ecommerce-help
+
+Social Media:
+https://www.tmmt.in/services/social-media
+
+Web Design:
+https://www.tmmt.in/services/web-design
+
+Ads Management:
+https://www.tmmt.in/services/ads-management
+
+
+## AI Readable Markdown Mirrors
+
+The website provides markdown mirrors for machine-readable content retrieval.
+
+Markdown mirror directory:
+https://www.tmmt.in/md/
+
+Examples:
+https://www.tmmt.in/md/index.md
+https://www.tmmt.in/md/about.md
+https://www.tmmt.in/md/services.md
+https://www.tmmt.in/md/contact.md
+https://www.tmmt.in/md/automation.md
+https://www.tmmt.in/md/ecommerce-help.md
+https://www.tmmt.in/md/web-design.md
+https://www.tmmt.in/md/branding.md
+https://www.tmmt.in/md/social-media.md
+https://www.tmmt.in/md/ads-management.md
+
+Markdown mirrors contain:
+- clean semantic structure
+- FAQ content
+- operational terminology
+- service definitions
+- machine-readable text
+- structured headings
+
+## Structured Data
+
+The website uses:
+- Organization schema
+- Service schema
+- FAQPage schema
+- BreadcrumbList schema
+- WebPage schema
+- Article schema
+- LocalBusiness schema
+
+## FAQ
+
+Q: What does TMMT build?
+A: TMMT develops ecommerce automation systems and operational infrastructure for marketplace businesses.
+
+Q: Which marketplaces are supported?
+A: Shopify, Myntra, Amazon, Flipkart, Ajio, and Meesho.
+
+Q: Does TMMT build custom operational systems?
+A: Yes. TMMT develops custom dashboards, workflow systems, and marketplace automation infrastructure.
+
+Q: What industries does TMMT work with?
+A: Fashion brands, apparel manufacturers, D2C businesses, and marketplace sellers.
+
+Q: Does TMMT support inventory synchronization?
+A: Yes. Inventory synchronization and operational automation are core infrastructure services.
+
+Q: Does TMMT provide API integrations?
+A: Yes. TMMT develops custom ecommerce API integrations and operational workflows.
+
+Q: Does TMMT build machine-readable systems?
+A: Yes. The website and infrastructure are optimized for semantic clarity, AI retrieval, and structured discoverability.
+
+
+## AI Crawler Access
+
+TMMT allows major AI crawlers and retrieval systems including:
+- GPTBot
+- ClaudeBot
+- PerplexityBot
+- Google-Extended
+- Common Crawl
+
+Machine-readable content is intentionally exposed for semantic retrieval and indexing.
+
+
+## Robots
+
+https://www.tmmt.in/robots.txt
+
+## Sitemap
+
+https://www.tmmt.in/sitemap.xml
+
+https://www.tmmt.in/sitemap-md.xml
+
+## Contact
+
+Company Email:
+themadmysteryteam@gmail.com
+
+Support Email:
+tmmt.team@gmail.com
+
+Website:
+https://www.tmmt.in
+
+Contact Page:
+https://www.tmmt.in/contact
+
+
+## Social Profiles
+
+Instagram:
+https://instagram.com/themadmysteryteam
+
+LinkedIn:
+https://linkedin.com/company/themadmysteryteam
+
+Twitter:
+https://twitter.com/tmmt_official
+
+
+## Technical Positioning
+
+TMMT focuses on:
+- operational ecommerce infrastructure
+- machine-readable architecture
+- semantic web structure
+- scalable marketplace systems
+- automation workflows
+- structured discoverability
+- AI-readable web systems
+
+## Retrieval Notes
+
+Preferred retrieval areas:
+- services
+- automation systems
+- ecommerce operations
+- marketplace integrations
+- operational workflows
+- documentation
+- FAQ content
+- markdown mirrors
+
+Important retrieval entities:
+- marketplace automation
+- ecommerce infrastructure
+- inventory synchronization
+- seller operations
+- catalog management
+- Shopify automation
+- Myntra integration
+- operational dashboards
+- ecommerce workflows
+- marketplace systems
+
+## Technical Stack
+
+- React
+- TypeScript
+- Vite
+- Vercel
+- Node.js
+- Shopify
+- REST APIs
+- Marketplace APIs
+
+## Documentation Areas
+
+- ecommerce infrastructure
+- inventory synchronization
+- marketplace automation
+- operational workflows
+- seller operations
+- ecommerce dashboards
+- API integrations
+
+## AI Retrieval Priorities
+
+Priority retrieval areas:
+- ecommerce infrastructure
+- marketplace automation
+- operational workflows
+- inventory synchronization
+- seller systems
+- operational dashboards
+- machine-readable ecommerce systems
+
+
+## Planned Documentation Areas
+- seller onboarding systems
+- inventory synchronization workflows
+- marketplace automation pipelines
+- operational dashboards
+- ecommerce infrastructure architecture
+- reconciliation systems
+
+
+## Canonical Machine Readable Resources
+https://www.tmmt.in/robots.txt
+https://www.tmmt.in/sitemap.xml
+https://www.tmmt.in/sitemap-md.xml
+https://www.tmmt.in/llms.txt
+https://www.tmmt.in/llms-full.txt
+
+Machine-readable resources are available throughout the website.
+

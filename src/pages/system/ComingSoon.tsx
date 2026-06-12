@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { submitForm } from '../../form/formService';
+import SEO from '../../components/SEO';
 
-// Define props to distinguish between different "Coming Soon" instances
+
+
 interface ComingSoonProps {
   pageName?: string;
 }
@@ -20,12 +22,9 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-
     try {
-      // Logic uses the 'notify' key from your formService.ts
       const res = await submitForm('notify', {
         email: email,
-        // page_source helps you distinguish signups in your Google Sheet
         page_source: pageName,
         subject: `Waitlist Signup: ${pageName}`,
         message: `New subscriber interested in ${pageName}.`,
@@ -38,17 +37,16 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
         setStatus('error');
       }
     } catch (err) {
-      console.error("Submission error:", err);
       setStatus('error');
     }
   };
 
   const containerStyle: React.CSSProperties = {
-    height: '100vh',
+    minHeight: '100vh', // Changed to minHeight
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'center', // Centers content vertically
     alignItems: 'center',
     backgroundColor: COLORS.bg,
     backgroundImage: `
@@ -56,13 +54,25 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
       radial-gradient(at 100% 100%, rgba(0, 113, 227, 0.03) 0px, transparent 50%)
     `,
     textAlign: 'center',
-    padding: '0 24px',
+    padding: '40px 24px', // Added top/bottom padding for mobile breathing room
     boxSizing: 'border-box',
     fontFamily: 'system-ui, -apple-system, sans-serif',
+    position: 'relative'
   };
 
   return (
     <div style={containerStyle}>
+
+      <SEO 
+        title={`${pageName} | Coming Soon`}
+        description="We are engineering a space for founders and creators. Join the waitlist to be notified first."
+        path={window.location.pathname}
+        ogImage="/tmmt-logo.png"
+      />
+
+      {/* Spacer to help center the card perfectly */}
+      <div style={{ flex: 1 }} /> 
+
       <div style={{
         padding: '60px 40px',
         borderRadius: '32px',
@@ -71,11 +81,13 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
         border: '1px solid rgba(0, 0, 0, 0.05)',
         maxWidth: '640px',
         width: '100%',
-        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.04)'
+        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.04)',
+        boxSizing: 'border-box',
+        zIndex: 2
       }}>
         <img src="/logo.png" alt="TMMT" style={{ height: '48px', marginBottom: '32px' }} />
         
-        <h1 style={{ fontSize: '48px', fontWeight: 700, letterSpacing: '-0.04em', margin: '0 0 16px' }}>
+        <h1 style={{ fontSize: 'clamp(32px, 8vw, 48px)', fontWeight: 700, letterSpacing: '-0.04em', margin: '0 0 16px', lineHeight: 1.1 }}>
           {pageName} is almost here.
         </h1>
         
@@ -84,9 +96,9 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
         </p>
 
         {status === 'success' ? (
-          <div style={{ padding: '20px', backgroundColor: '#fff', borderRadius: '16px', border: `1px solid ${COLORS.accent}` }}>
+          <div style={{ padding: '30px 20px', backgroundColor: '#fff', borderRadius: '16px', border: `1px solid ${COLORS.accent}` }}>
             <h3 style={{ color: COLORS.accent, margin: '0 0 5px' }}>You're on the list.</h3>
-            <p style={{ color: COLORS.subtext, margin: 0 }}>We'll reach out as soon as the {pageName} hub goes live.</p>
+            <p style={{ color: COLORS.subtext, margin: 0, fontSize: '15px' }}>We'll reach out as soon as the {pageName} hub goes live.</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
@@ -140,8 +152,17 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
         </p>
       </div>
 
-      <div style={{ position: 'absolute', bottom: '85px', fontSize: '13px', color: COLORS.subtext }}>
-        © {new Date().getFullYear()} TMMT. Engineered with intent.
+      {/* Footer is now part of the flex column, ensuring it stays at the bottom with proper spacing */}
+      <div style={{ 
+        flex: 1, 
+        display: 'flex', 
+        alignItems: 'flex-end', 
+        paddingBottom: '40px',
+        marginTop: '20px' // Ensures it doesn't touch the box on small screens
+      }}>
+        <div style={{ fontSize: '13px', color: COLORS.subtext }}>
+          © {new Date().getFullYear()} TMMT. Engineered with intent.
+        </div>
       </div>
     </div>
   );

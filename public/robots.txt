@@ -1,0 +1,152 @@
+# ====================================================================
+# TMMT AI + Search Infrastructure Crawl Rules
+# Production Robots Configuration
+# Canonical Domain: https://www.tmmt.in
+# ====================================================================
+
+# ====================================================================
+# GLOBAL ACCESS RULES
+# ====================================================================
+
+User-agent: *
+Allow: /
+
+# ====================================================================
+# PRIMARY INDEXABLE ROUTES
+# ====================================================================
+
+Allow: /about
+Allow: /contact
+Allow: /services
+
+# Founder Pages
+Allow: /mohit-singh
+Allow: /harsh-aggarwal
+
+# services Pages
+Allow: /services/
+
+# Legal Pages
+Allow: /privacy-policy
+Allow: /terms-and-conditions
+Allow: /cookie-policy
+
+# Discovery + Structured Pages
+Allow: /sitemap
+Allow: /md/
+
+
+# LLM Retrieval Files
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+
+# ====================================================================
+# BLOCK LOW VALUE OR SYSTEM ROUTES
+# ====================================================================
+
+# Internal System Routes
+Disallow: /system/
+Disallow: /form/
+Disallow: /404
+
+# Internal APIs
+Disallow: /api/
+
+# Build / Internal Files
+Disallow: /src/
+
+# Private / Temporary
+Disallow: /temp/
+Disallow: /draft/
+Disallow: /preview/
+
+
+# ====================================================================
+# AI CRAWLER ACCESS
+# ====================================================================
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI Systems
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Allow: /
+
+# ByteDance / TikTok Crawlers
+User-agent: Bytespider
+Allow: /
+
+# ====================================================================
+# SEARCH ENGINE CRAWLERS
+# ====================================================================
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
+# ====================================================================
+# CRAWL PREFERENCES
+# ====================================================================
+
+# Preferred semantic retrieval areas:
+# - /services/
+
+# Machine-readable markdown mirrors available in:
+Allow: /md/
+Allow: /*.md$
+
+
+# ====================================================================
+# SITEMAPS
+# ====================================================================
+
+Sitemap: https://www.tmmt.in/sitemap.xml
+Sitemap: https://www.tmmt.in/sitemap-md.xml
+
+
+# ====================================================================
+# TMMT Infrastructure
+# Ecommerce Automation + Marketplace Systems
+# ====================================================================
