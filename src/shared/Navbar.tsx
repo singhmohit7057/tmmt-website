@@ -41,10 +41,12 @@ const Navbar: React.FC = () => {
         title="The Mad Mystery Team" 
         style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
       >
-        <img 
-          src="/logo.png" 
-          alt="TMMT Logo" 
-          style={{ height: '24px', width: 'auto', marginRight: '8px' }} 
+        <img
+          src="/logo.png"
+          alt="TMMT Logo"
+          width="24"
+          height="24"
+          style={{ height: '24px', width: 'auto', marginRight: '8px' }}
         />
         <span style={{ fontSize: '1.1rem', fontWeight: 600, color: '#1d1d1f' }}>TMMT</span>
       </Link>

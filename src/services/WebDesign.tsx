@@ -65,7 +65,7 @@ const WebDesign: React.FC = () => {
       label: "BUILDING NOW",
       title: "Ecomsathi",
       desc: "An all-in-one ecommerce operations platform being built by TMMT — SKU generation, label cropping, batch PDF tools, and seller workflows unified into a single interface.",
-      tech: ["Vite", "React", "TypeScript", "FastAPI", "SupaBase", "Railway"],
+      tech: ["Vite", "React", "TypeScript", "FastAPI", "SupaBase", "Railway", "Node.js + Express", "FFmpeg", "Sharp", "Tesseract.js", "pdf-lib", "jszip"],
       image: "/services/ecomsathi.png",
       link: "https://ecomsathi.vercel.app/"
     },
@@ -89,7 +89,7 @@ const WebDesign: React.FC = () => {
       label: "SIDE PROJECT",
       title: "GrabOffer",
       desc: "Lightweight deal-aggregator optimized for extreme performance with sub-second search and mobile responsiveness.",
-      tech: ["Vite", "React", "TypeScript", "Vercel"],
+      tech: ["Vite", "React", "TypeScript", "Vercel", "Web3Forms"],
       image: "/services/graboffer.png",
       link: "https://graboffer.vercel.app"
     },
@@ -97,7 +97,7 @@ const WebDesign: React.FC = () => {
       label: "PORTFOLIO WEBSITE",
       title: "Muskaan Singh",
       desc: "Personal portfolio for fashion designer Muskaan Singh — minimal, editorial layout with smooth transitions and full mobile responsiveness.",
-      tech: ["React", "Vite", "TypeScript", "Vercel", "Web3Forms"],
+      tech: ["React", "Vite", "TypeScript", "Vercel", "Framer Motion", "Web3Forms"],
       image: "/services/muskaansingh.png",
       link: "https://www.muskaansingh.in"
     },
@@ -105,9 +105,17 @@ const WebDesign: React.FC = () => {
       label: "SAAS PRODUCT",
       title: "WashMate",
       desc: "A laundry service management platform with booking flows, order tracking, and a clean dashboard built for speed and simplicity.",
-      tech: ["React", "Vite", "TypeScript", "Vercel", "SupaBase"],
+      tech: ["React", "Vite", "TypeScript", "Vercel", "Framer Motion", "SupaBase"],
       image: "/services/washmate.png",
       link: "https://washmate-tawny.vercel.app/"
+    },
+    {
+      label: "FINISHED PROJECT",
+      title: "Jarvis HMS",
+      desc: "A full-stack clinic management system covering three modules — Doctor (appointments, prescriptions, consultations), Pharmacy (inventory, billing, near-expiry tracking, sales history), and Lab (bookings, sample processing, reports). Unified under a single role-based dashboard with real-time analytics and activity logs.",
+      tech: ["Vite", "React", "TypeScript", "Tailwind", "Supabase", "Zustand", "Zod", "jsPDF + XLSX", "TanStack Table", "Recharts", "Sonner"],
+      image: "/services/jarvishms.png",
+      link: "https://jarvis-hms.vercel.app/"
     },
     {
       label: "INTERACTIVE BUILD",

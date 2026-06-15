@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
 // Vercel Telemetry Modules
@@ -9,48 +9,43 @@ import Navbar from './shared/Navbar';
 import Footer from './shared/Footer';
 
 // Main Pages
-import Homepage from './pages/Homepage';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-import Careers from './pages/Career';
+const Homepage = lazy(() => import('./pages/Homepage'));
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Careers = lazy(() => import('./pages/Career'));
 
 // Service Pages
-import WebDesign from './services/WebDesign';
-import Automation from './services/Automation';
-import SocialMedia from './services/SocialMedia';
-import AdsManagement from './services/AdsManagement';
-import EcomHelp from './services/EcomHelp';
-import Branding from './services/Branding';
+const WebDesign = lazy(() => import('./services/WebDesign'));
+const Automation = lazy(() => import('./services/Automation'));
+const SocialMedia = lazy(() => import('./services/SocialMedia'));
+const AdsManagement = lazy(() => import('./services/AdsManagement'));
+const EcomHelp = lazy(() => import('./services/EcomHelp'));
+const Branding = lazy(() => import('./services/Branding'));
 
 // Legal Pages
-import CookiePolicy from './legal/CookiePolicy';
-import PrivacyPolicy from './legal/PrivacyPolicy';
-import TermsAndConditions from './legal/TermsAndConditions';
+const CookiePolicy = lazy(() => import('./legal/CookiePolicy'));
+const PrivacyPolicy = lazy(() => import('./legal/PrivacyPolicy'));
+const TermsAndConditions = lazy(() => import('./legal/TermsAndConditions'));
 
-// Founder Page
-import MohitSingh from './pages/founder/MohitSingh';
-import HarshAggarwal from './pages/founder/HarshAggarwal';
-
-// Sitemap Page
-import Sitemap from './pages/system/Sitemap';
+// Founder Pages
+const MohitSingh = lazy(() => import('./pages/founder/MohitSingh'));
+const HarshAggarwal = lazy(() => import('./pages/founder/HarshAggarwal'));
 
 // System Pages
-import ComingSoon from './pages/system/ComingSoon';
-import NotFound from './pages/system/NotFound';
+const Sitemap = lazy(() => import('./pages/system/Sitemap'));
+const ComingSoon = lazy(() => import('./pages/system/ComingSoon'));
+const NotFound = lazy(() => import('./pages/system/NotFound'));
 
 const App: React.FC = () => {
   const location = useLocation();
 
-  // GLOBAL SCROLL RESTORATION MATRIX INJECTION
   useEffect(() => {
-    // Instantly force the viewport window back to top-left margins on route change
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  }, [location.pathname]); // Listen precisely to path string variations
-  
-  // Define which paths should hide the global layout
-  const isComingSoonPage = 
-    location.pathname === '/community' || 
+  }, [location.pathname]);
+
+  const isComingSoonPage =
+    location.pathname === '/community' ||
     location.pathname === '/services/soon';
 
   const rootStyle: React.CSSProperties = {
@@ -67,61 +62,45 @@ const App: React.FC = () => {
 
   return (
     <div style={rootStyle}>
-      {/* Conditionally render Navbar */}
       {!isComingSoonPage && <Navbar />}
-      
+
       <main style={{ flex: 1, marginTop: isComingSoonPage ? '0' : '48px' }}>
-        <Routes>
-          {/* Main Routes */}
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/careers" element={<Careers />}/>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/careers" element={<Careers />} />
 
-          {/* Nested Service Routes */}
-          <Route path="/services/web-design" element={<WebDesign />} />
-          <Route path="/services/automation" element={<Automation />} />
-          <Route path="/services/social-media" element={<SocialMedia />} />
-          <Route path="/services/ads-management" element={<AdsManagement />} />
-          <Route path="/services/ecommerce-help" element={<EcomHelp />} />
-          <Route path="/services/branding" element={<Branding />} />
+            <Route path="/services/web-design" element={<WebDesign />} />
+            <Route path="/services/automation" element={<Automation />} />
+            <Route path="/services/social-media" element={<SocialMedia />} />
+            <Route path="/services/ads-management" element={<AdsManagement />} />
+            <Route path="/services/ecommerce-help" element={<EcomHelp />} />
+            <Route path="/services/branding" element={<Branding />} />
 
-          {/* Legal Routes */}
-          <Route path="/cookie-policy" element={<CookiePolicy />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
-          {/* Founder Routes */}
-          <Route path="/mohit-singh" element={<MohitSingh />} />
-          <Route path="/harsh-aggarwal" element={<HarshAggarwal />} />
+            <Route path="/mohit-singh" element={<MohitSingh />} />
+            <Route path="/harsh-aggarwal" element={<HarshAggarwal />} />
 
-          {/* Sitemap Route */}
-          <Route path="/sitemap" element={<Sitemap />} />
-          
-          {/* System/Coming Soon Routes */}
-          <Route 
-            path="/services/soon" 
-            element={<ComingSoon pageName="New Services" />} 
-          />
+            <Route path="/sitemap" element={<Sitemap />} />
 
-          <Route 
-            path="/community" 
-            element={<ComingSoon pageName="TMMT Community" />} 
-          />
+            <Route path="/services/soon" element={<ComingSoon pageName="New Services" />} />
+            <Route path="/community" element={<ComingSoon pageName="TMMT Community" />} />
 
-          {/* Catch-All 404 Route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </main>
 
-      {/* Conditionally render Footer */}
       {!isComingSoonPage && <Footer />}
 
-      {/* Vercel Insights Components */}
       <Analytics />
       <SpeedInsights />
-      
     </div>
   );
 };

@@ -75,6 +75,13 @@ URL: https://washmate-tawny.vercel.app/
 Description: A laundry service management platform with booking flows, order tracking, and a clean dashboard built for speed and simplicity.
 Tech: React, Vite, TypeScript, Vercel, Supabase
 
+### Jarvis HMS
+
+Status: Finished Project
+URL: https://jarvis-hms.vercel.app/
+Description: A full-stack clinic management system covering three modules — Doctor (appointments, prescriptions, consultations), Pharmacy (inventory, billing, near-expiry tracking, sales history), and Lab (bookings, sample processing, reports). Unified under a single role-based dashboard with real-time analytics and activity logs.
+Tech: Vite, React, TypeScript, Tailwind, Supabase, Zustand, Zod, jsPDF, XLSX, TanStack Table, Recharts, Sonner
+
 ### 100 Year Clock
 
 Status: Interactive Build
@@ -90,3 +97,4 @@ Tech: JavaScript, CSS3, GitHub Pages
 - SaaS Products
 - Portfolio and Personal Brands
 - Marketplace Sellers
+- Healthcare & Clinics

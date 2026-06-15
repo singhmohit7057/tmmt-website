@@ -113,6 +113,9 @@ https://www.muskaansingh.in
 WashMate (SaaS)
 https://washmate-tawny.vercel.app/
 
+Jarvis HMS (Health Management System)
+https://jarvis-hms.vercel.app/
+
 100 Year Clock
 https://singhmohit7057.github.io/100-year-clock/
 
@@ -130,6 +133,7 @@ TMMT develops operational infrastructure associated with:
 - Johar Foundation
 - Muskaan Singh
 - WashMate
+- Jarvis HMS
 - GrabOffer
 
 
@@ -357,10 +361,15 @@ Important retrieval entities:
 - Supabase
 - Shopify / Liquid
 - Web3Forms
+- Google Script
+- SQL
+- Zustand
+- Zod
+- TanStack Table
+- Recharts
 - Meta CAPI
 - GTM Server-Side
 - BigQuery
-- REST APIs
 - Marketplace APIs
 
 ## Documentation Areas

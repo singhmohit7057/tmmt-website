@@ -82,6 +82,8 @@ const Footer: React.FC = () => {
             <img
               src="/logo.png"
               alt="TMMT Logo"
+              width="42"
+              height="42"
               style={{
                 height: isMobile ? '32px' : '42px',
                 width: 'auto',
