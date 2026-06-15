@@ -401,10 +401,13 @@ const About: React.FC = () => {
 
                 {item.status && (
                   <div
+                    aria-label="Active"
+                    role="img"
                     style={{
                       width: '8px',
                       height: '8px',
                       borderRadius: '50%',
+                      backgroundColor: COLORS.statusGreen
                     }}
                   />
                 )}

@@ -14,8 +14,12 @@ const ContactForm: React.FC = () => {
         ...formData,
         subject: `New Inquiry from ${formData.name}`,
       });
-      if (res.success) setStatus('success');
-      else setStatus('error');
+      if (res.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('error');
+      }
     } catch {
       setStatus('error');
     }
@@ -40,36 +44,41 @@ const ContactForm: React.FC = () => {
     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
       <div>
         <label style={labelStyle}>Full Name</label>
-        <input 
-          type="text" 
-          required 
-          style={inputStyle} 
+        <input
+          type="text"
+          required
+          style={inputStyle}
           placeholder="Rahul Singh"
+          value={formData.name}
           onChange={(e) => setFormData({...formData, name: e.target.value})}
         />
       </div>
       <div>
         <label style={labelStyle}>Email Address</label>
-        <input 
-          type="email" 
-          required 
-          style={inputStyle} 
+        <input
+          type="email"
+          required
+          style={inputStyle}
           placeholder="rahul@example.com"
+          value={formData.email}
           onChange={(e) => setFormData({...formData, email: e.target.value})}
         />
       </div>
       <div>
         <label style={labelStyle}>How can we help?</label>
-        <textarea 
-          required 
-          rows={5} 
-          style={{ ...inputStyle, resize: 'none' }} 
+        <textarea
+          required
+          rows={5}
+          style={{ ...inputStyle, resize: 'none' }}
           placeholder="Tell us about your project..."
+          value={formData.message}
           onChange={(e) => setFormData({...formData, message: e.target.value})}
         />
       </div>
-      
-      {status === 'error' && <p style={{ color: '#ff3b30', fontSize: '14px' }}>Something went wrong. Please try again.</p>}
+
+      <div aria-live="polite">
+        {status === 'error' && <p style={{ color: '#ff3b30', fontSize: '14px', margin: 0 }}>Something went wrong. Please try again.</p>}
+      </div>
 
       <button 
         type="submit" 

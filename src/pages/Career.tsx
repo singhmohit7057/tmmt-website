@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const Careers: React.FC = () => {
@@ -113,9 +114,10 @@ const Careers: React.FC = () => {
       {/* Interactive Matrix Filter Tabs */}
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 10%', display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '40px', boxSizing: 'border-box' }}>
         {(['all', 'strategy', 'creative', 'engineering'] as const).map(tab => (
-          <button 
-            key={tab} 
+          <button
+            key={tab}
             onClick={() => setActiveTab(tab)}
+            aria-pressed={activeTab === tab}
             style={{
               padding: '10px 24px', borderRadius: '24px', border: 'none', fontSize: '14px', fontWeight: 600, cursor: 'pointer',
               backgroundColor: activeTab === tab ? COLORS.text : COLORS.bg,
@@ -164,24 +166,24 @@ const Careers: React.FC = () => {
                 </p>
               </div>
               <div>
-                <a 
-                  href="/contact" 
-                  style={{ 
-                    padding: '14px 28px', 
-                    borderRadius: '12px', 
-                    backgroundColor: COLORS.text, 
-                    color: '#fff', 
-                    textDecoration: 'none', 
-                    fontSize: '14px', 
-                    fontWeight: 600, 
+                <Link
+                  to="/contact"
+                  style={{
+                    padding: '14px 28px',
+                    borderRadius: '12px',
+                    backgroundColor: COLORS.text,
+                    color: '#fff',
+                    textDecoration: 'none',
+                    fontSize: '14px',
+                    fontWeight: 600,
                     display: 'inline-block',
-                    transition: 'opacity 0.2s ease' 
+                    transition: 'opacity 0.2s ease'
                   }}
                   onMouseOver={(e) => e.currentTarget.style.opacity = '0.9'}
                   onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
                 >
                   Apply Interface
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -200,7 +202,7 @@ const Careers: React.FC = () => {
           <div style={{ fontSize: '16px', fontWeight: 500, color: COLORS.text }}>
             Fill out our contact interface above or you can directly send your resume at{' '}
             <a 
-              href="mailto:team.tmmt@gmail.in" 
+              href="mailto:themadmysteryteam@gmail.com" 
               style={{ 
                 color: COLORS.accent, 
                 textDecoration: 'none', 
@@ -211,7 +213,7 @@ const Careers: React.FC = () => {
               onMouseOver={(e) => e.currentTarget.style.borderBottomColor = COLORS.accent}
               onMouseOut={(e) => e.currentTarget.style.borderBottomColor = 'transparent'}
             >
-              team.tmmt@gmail.in
+              themadmysteryteam@gmail.com
             </a>
           </div>
         </div>

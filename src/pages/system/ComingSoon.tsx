@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { submitForm } from '../../form/formService';
 import SEO from '../../components/SEO';
 
@@ -9,6 +10,7 @@ interface ComingSoonProps {
 }
 
 const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
+  const { pathname } = useLocation();
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
@@ -66,7 +68,7 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
       <SEO
         title={`${pageName} | Coming Soon`}
         description="We are engineering a space for founders and creators. Join the waitlist to be notified first."
-        path={window.location.pathname}
+        path={pathname}
         ogImage="/tmmt-logo.webp"
         robots="noindex, nofollow"
       />

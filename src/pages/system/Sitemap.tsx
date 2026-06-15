@@ -48,11 +48,11 @@ const Sitemap: React.FC = () => {
       category: 'Leadership & Founders',
       links: [
         {
-          label: 'Mohit Singh | Systems & Design',
+          label: 'Mohit Singh | Systems & Automation',
           path: '/mohit-singh'
         },
         {
-          label: 'Harsh Aggarwal | Strategy & Automation',
+          label: 'Harsh Aggarwal | Strategy & Brand Systems',
           path: '/harsh-aggarwal'
         }
       ]
