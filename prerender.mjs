@@ -18,7 +18,7 @@ const BASE = 'https://www.tmmt.in';
 const DEFAULTS = {
   title: 'TMMT | Ecommerce Automation & Marketplace Infrastructure',
   description: 'TMMT builds ecommerce automation, marketplace infrastructure, inventory sync, and seller workflows for fashion brands and D2C businesses.',
-  ogImage: `${BASE}/tmmt-logo.png`,
+  ogImage: `${BASE}/tmmt-logo.webp`,
 };
 
 const ROUTES = [
@@ -26,7 +26,7 @@ const ROUTES = [
     path: '/',
     title: 'Ecommerce Automation, AI & Marketplace Infrastructure | TMMT',
     description: 'TMMT builds ecommerce automation, marketplace infrastructure, inventory sync, and seller workflows for fashion brands and D2C businesses.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -95,7 +95,7 @@ const ROUTES = [
     path: '/about',
     title: 'About TMMT | Ecommerce Automation & Marketplace Ops',
     description: 'TMMT builds ecommerce infrastructure — marketplace automation, inventory sync, operational dashboards, and scalable commerce ops for modern brands.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -173,7 +173,7 @@ const ROUTES = [
     path: '/services',
     title: 'Services | What TMMT Builds – TMMT',
     description: 'TMMT builds ecommerce frontends, Python automation, marketplace infrastructure, branding systems, performance ads, and social media for D2C brands.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -203,7 +203,7 @@ const ROUTES = [
     path: '/contact',
     title: 'Contact TMMT | Talk to Us',
     description: "Tell us what you're working on — inventory sync, marketplace setup, automation, or ads. We'll figure out if we can fix it.",
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -230,7 +230,7 @@ const ROUTES = [
     path: '/services/web-design',
     title: 'Ecommerce Web Design & React Development – TMMT',
     description: 'We build fast, SEO-ready ecommerce websites using React, TypeScript, and Vite — optimized for Core Web Vitals, mobile, and search crawlability.',
-    ogImage: `${BASE}/services/web.png`,
+    ogImage: `${BASE}/services/web.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -257,7 +257,7 @@ const ROUTES = [
     path: '/services/automation',
     title: 'Ecommerce Automation | Python & FastAPI Workflows – TMMT',
     description: 'Custom Python-FastAPI automation for ecommerce: label processing, inventory scrapers, bank settlement tools, and workflow engines.',
-    ogImage: `${BASE}/services/automation.png`,
+    ogImage: `${BASE}/services/automation.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -284,7 +284,7 @@ const ROUTES = [
     path: '/services/ecommerce-help',
     title: 'Marketplace Operations | Multi-Channel Setup – TMMT',
     description: 'We set up and manage your seller presence on Amazon, Myntra, Flipkart, Ajio, and Meesho — catalog, inventory sync, FBA/FBF, and settlement reconciliation.',
-    ogImage: `${BASE}/services/marketplace.png`,
+    ogImage: `${BASE}/services/marketplace.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -311,7 +311,7 @@ const ROUTES = [
     path: '/services/branding',
     title: 'Brand Identity & Business Setup for Ecommerce – TMMT',
     description: 'Brand identity, GST registration, HSN mapping, trademark filing, APOB setup, and marketplace onboarding for ecommerce businesses.',
-    ogImage: `${BASE}/services/brand.png`,
+    ogImage: `${BASE}/services/brand.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -338,7 +338,7 @@ const ROUTES = [
     path: '/services/social-media',
     title: 'Social Media Management & Content Production – TMMT',
     description: "We handle your brand's social media end to end — reels, posts, captions, scheduling, and growth across Instagram, LinkedIn, and YouTube Shorts.",
-    ogImage: `${BASE}/services/social.png`,
+    ogImage: `${BASE}/services/social.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -365,7 +365,7 @@ const ROUTES = [
     path: '/services/ads-management',
     title: 'Meta & Google Ads Management for Ecommerce Brands – TMMT',
     description: 'We run Meta and Google Ads for D2C and marketplace brands with server-side CAPI tracking, audience exclusion logic, and ROAS-focused campaign architecture.',
-    ogImage: `${BASE}/services/performance.png`,
+    ogImage: `${BASE}/services/performance.webp`,
     schemas: [
       {
         '@context': 'https://schema.org',
@@ -392,7 +392,7 @@ const ROUTES = [
     path: '/mohit-singh',
     title: 'Mohit Singh | Co-Founder – TMMT',
     description: 'Mohit Singh is Co-Founder of TMMT, building ecommerce automation infrastructure, Python-FastAPI engines, and marketplace integrations.',
-    ogImage: `${BASE}/Mohit-Singh.jpg`,
+    ogImage: `${BASE}/Mohit-Singh.webp`,
     ogType: 'profile',
     profileFirstName: 'Mohit',
     profileLastName: 'Singh',
@@ -410,7 +410,7 @@ const ROUTES = [
         '@type': 'Person',
         name: 'Mohit Singh',
         url: `${BASE}/mohit-singh`,
-        image: `${BASE}/Mohit-Singh.jpg`,
+        image: `${BASE}/Mohit-Singh.webp`,
         jobTitle: 'Co-Founder',
         description: 'Builds automation infrastructure, Python-FastAPI engines, and marketplace integrations at TMMT.',
         knowsAbout: ['Python', 'FastAPI', 'Ecommerce Automation', 'Marketplace Integration'],
@@ -423,7 +423,7 @@ const ROUTES = [
     path: '/harsh-aggarwal',
     title: 'Harsh Aggarwal | Co-Founder – TMMT',
     description: 'Harsh Aggarwal is Co-Founder of TMMT, leading client strategy, UI architecture, and brand systems for ecommerce businesses and D2C marketplace brands.',
-    ogImage: `${BASE}/Harsh-Aggarwal.jpg`,
+    ogImage: `${BASE}/Harsh-Aggarwal.webp`,
     ogType: 'profile',
     profileFirstName: 'Harsh',
     profileLastName: 'Aggarwal',
@@ -441,7 +441,7 @@ const ROUTES = [
         '@type': 'Person',
         name: 'Harsh Aggarwal',
         url: `${BASE}/harsh-aggarwal`,
-        image: `${BASE}/Harsh-Aggarwal.jpg`,
+        image: `${BASE}/Harsh-Aggarwal.webp`,
         jobTitle: 'Co-Founder',
         description: 'Leads client strategy, UI architecture, and brand systems at TMMT.',
         knowsAbout: ['UI Architecture', 'Brand Systems', 'Client Strategy', 'Ecommerce'],
@@ -453,43 +453,43 @@ const ROUTES = [
     path: '/privacy-policy',
     title: 'Privacy Policy | TMMT',
     description: 'TMMT privacy policy covering data collection, use, and your rights as a user of tmmt.in.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
   {
     path: '/terms-and-conditions',
     title: 'Terms & Conditions | TMMT',
     description: 'Terms and conditions for using TMMT services, website, and ecommerce automation solutions.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
   {
     path: '/cookie-policy',
     title: 'Cookie Policy | TMMT',
     description: 'Cookie policy for tmmt.in — what cookies are used and how to manage them.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
   {
     path: '/careers',
     title: 'Careers at TMMT | Join the Team',
     description: 'Explore open roles at TMMT — we hire for ecommerce automation, marketplace operations, and web engineering.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
   {
     path: '/sitemap',
     title: 'Sitemap | TMMT',
     description: 'Full sitemap of tmmt.in — all pages, services, and resources.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
   {
     path: '/community',
     title: 'TMMT Community | Coming Soon',
     description: 'The TMMT community is coming soon. Join the waitlist to get early access.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
   {
     path: '/services/soon',
     title: 'New Services | Coming Soon – TMMT',
     description: 'New TMMT services are on the way. Join the waitlist to be the first to know.',
-    ogImage: `${BASE}/tmmt-logo.png`,
+    ogImage: `${BASE}/tmmt-logo.webp`,
   },
 ];
 

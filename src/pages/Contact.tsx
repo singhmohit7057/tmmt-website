@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
             '@type': 'Organization',
             name: 'TMMT',
             url: 'https://www.tmmt.in',
-            logo: 'https://www.tmmt.in/tmmt-logo.png',
+            logo: 'https://www.tmmt.in/tmmt-logo.webp',
             email: 'themadmysteryteam@gmail.com',
             description:
               'TMMT builds ecommerce infrastructure systems, marketplace automation workflows, operational dashboards, and scalable commerce operations.',
