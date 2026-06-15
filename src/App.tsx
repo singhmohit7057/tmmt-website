@@ -8,8 +8,10 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navbar from './shared/Navbar';
 import Footer from './shared/Footer';
 
+// Homepage is loaded eagerly to prevent CLS from footer jumping on initial load
+import Homepage from './pages/Homepage';
+
 // Main Pages
-const Homepage = lazy(() => import('./pages/Homepage'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -65,7 +67,7 @@ const App: React.FC = () => {
       {!isComingSoonPage && <Navbar />}
 
       <main style={{ flex: 1, marginTop: isComingSoonPage ? '0' : '48px' }}>
-        <Suspense fallback={null}>
+        <Suspense fallback={<div style={{ minHeight: '100vh' }} />}>
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />

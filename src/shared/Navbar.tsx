@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
         style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
       >
         <img
-          src="/logo.png"
+          src="/logo.webp"
           alt="TMMT Logo"
           width="24"
           height="24"

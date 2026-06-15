@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
   };
 
   const legalLinkStyle: React.CSSProperties = {
-    color: '#86868b',
+    color: '#6e6e73',
     textDecoration: 'none',
     transition: 'color 0.2s ease',
     fontSize: '12px'
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
             }}
           >
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="TMMT Logo"
               width="42"
               height="42"
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
                 style={{
                   fontSize: '10px',
                   fontWeight: 700,
-                  color: '#86868b',
+                  color: '#6e6e73',
                   letterSpacing: '0.7px',
                   marginTop: '3px',
                   textTransform: 'uppercase'
@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
           {/* BRAND DESCRIPTION */}
           <p
             style={{
-              color: '#86868b',
+              color: '#6e6e73',
               fontSize: isMobile ? '13px' : '14px',
               lineHeight: '1.7',
               maxWidth: '280px',
@@ -225,7 +225,7 @@ const Footer: React.FC = () => {
           flexDirection: isMobile ? 'column' : 'row',
           textAlign: 'center',
           fontSize: '12px',
-          color: '#86868b',
+          color: '#6e6e73',
           flexWrap: 'wrap',
           gap: isMobile ? '16px' : '15px'
         }}
@@ -249,7 +249,7 @@ const Footer: React.FC = () => {
               (e.currentTarget.style.color = '#1d1d1f')
             }
             onMouseOut={(e) =>
-              (e.currentTarget.style.color = '#86868b')
+              (e.currentTarget.style.color = '#6e6e73')
             }
           >
             Privacy
@@ -262,7 +262,7 @@ const Footer: React.FC = () => {
               (e.currentTarget.style.color = '#1d1d1f')
             }
             onMouseOut={(e) =>
-              (e.currentTarget.style.color = '#86868b')
+              (e.currentTarget.style.color = '#6e6e73')
             }
           >
             Terms
@@ -275,7 +275,7 @@ const Footer: React.FC = () => {
               (e.currentTarget.style.color = '#1d1d1f')
             }
             onMouseOut={(e) =>
-              (e.currentTarget.style.color = '#86868b')
+              (e.currentTarget.style.color = '#6e6e73')
             }
           >
             Cookies
@@ -288,7 +288,7 @@ const Footer: React.FC = () => {
               (e.currentTarget.style.color = '#1d1d1f')
             }
             onMouseOut={(e) =>
-              (e.currentTarget.style.color = '#86868b')
+              (e.currentTarget.style.color = '#6e6e73')
             }
           >
             Sitemap

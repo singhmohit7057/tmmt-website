@@ -14,7 +14,7 @@ const EcomHelp: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7',
@@ -38,7 +38,7 @@ const EcomHelp: React.FC = () => {
         title="Marketplace Operations & Multi-Channel Ecommerce Setup"
         description="We set up and manage your seller presence on Amazon, Myntra, Flipkart, Ajio, and Meesho — catalog, inventory sync, FBA/FBF, and settlement reconciliation."
         path="/services/ecommerce-help"
-        ogImage="/services/marketplace.png"
+        ogImage="/services/marketplace.webp"
       />
 
       {/* 1. HERO SECTION */}
@@ -217,7 +217,7 @@ const EcomHelp: React.FC = () => {
             boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
           }}>
             <img 
-              src="/services/ibtida.png" 
+              src="/services/ibtida.webp" 
               alt="Ibtida Marketplace Presence" 
               style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
             />

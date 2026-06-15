@@ -501,6 +501,11 @@ for (const rawRoute of ROUTES) {
   const ogType = route.ogType || 'website';
 
   let html = template
+    // Defer render-blocking stylesheet
+    .replace(
+      /<link rel="stylesheet" crossorigin href="([^"]+\.css)">/,
+      `<link rel="preload" as="style" href="$1" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="$1"></noscript>`
+    )
     // Title
     .replace(
       /<title>[^<]*<\/title>/,

@@ -14,7 +14,7 @@ const Automation: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7',
@@ -37,7 +37,7 @@ const Automation: React.FC = () => {
       desc: "A custom Python-FastAPI engine for each platform that automates multi-platform shipping label segregation. It performs batch cropping and customizable output sizing, reducing manual warehouse labor by 90%.",
       tech: ["PYTHON 3.14", "FASTAPI", "OPENCV"],
       stats: "90% Labor Reduction",
-      image: "/services/label.png"
+      image: "/services/label.webp"
     },
     {
       label: "DATA INTEGRITY",
@@ -45,7 +45,7 @@ const Automation: React.FC = () => {
       desc: "Automated scraper and processor that reconciles Myntra monthly reports into Google Sheets. It tracks orders, returns, and scrapes buyer pincodes to build custom targeting audiences for Meta and Google Ads.",
       tech: ["SELENIUM", "PANDAS", "AWS"],
       stats: "Zero Human Error",
-      image: "/services/reconcile.png"
+      image: "/services/reconcile.webp"
     }
   ];
 
@@ -57,7 +57,7 @@ const Automation: React.FC = () => {
         title="Workflow Automation Engines & Custom Python Logic"
         description="Eliminate logistics bottlenecks and financial data entry errors. TMMT builds proprietary Python-FastAPI engines, OpenCV tools, and headless Selenium scrapers."
         path="/services/automation"
-        ogImage="/services/automation.png"
+        ogImage="/services/automation.webp"
       />
 
       {/* 1. HERO SECTION */}
@@ -190,7 +190,7 @@ const Automation: React.FC = () => {
             <div style={{ flex: 1 }}>
               <span style={{ fontSize: '11px', fontWeight: 700, color: COLORS.accent }}>{project.label}</span>
               <h3 style={{ fontSize: isMobile ? '32px' : '42px', margin: '10px 0' }}>{project.title}</h3>
-              <p style={{ color: index % 2 === 0 ? COLORS.subtext : '#86868b', fontSize: '18px', marginBottom: '25px', lineHeight: 1.6 }}>
+              <p style={{ color: index % 2 === 0 ? COLORS.subtext : '#6e6e73', fontSize: '18px', marginBottom: '25px', lineHeight: 1.6 }}>
                 {project.desc}
               </p>
               <div style={{ fontSize: '24px', fontWeight: 700, color: COLORS.accent, marginBottom: '20px' }}>{project.stats}</div>

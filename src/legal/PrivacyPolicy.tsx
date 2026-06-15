@@ -12,7 +12,7 @@ const PrivacyPolicy: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7'
@@ -37,7 +37,7 @@ const PrivacyPolicy: React.FC = () => {
         title="Data Protection Framework & Privacy Policy"
         description="Review the legal data governance and pipeline isolation protocols at TMMT. Learn how we secure commercial metrics and infrastructure assets."
         path="/privacy-policy"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       <span style={{ color: COLORS.accent, fontWeight: 600, textTransform: 'uppercase', fontSize: '12px', letterSpacing: '1px' }}>

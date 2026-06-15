@@ -8,7 +8,7 @@ const HarshAggarwal: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7'
@@ -40,7 +40,7 @@ const HarshAggarwal: React.FC = () => {
         title="Harsh Aggarwal | Co-Founder"
         description="Harsh Aggarwal is Co-Founder of TMMT, leading client strategy, UI architecture, and brand systems for ecommerce businesses and D2C marketplace brands."
         path="/harsh-aggarwal"
-        ogImage="/Harsh-Aggarwal.jpg"
+        ogImage="/Harsh-Aggarwal.webp"
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -48,7 +48,7 @@ const HarshAggarwal: React.FC = () => {
         '@type': 'Person',
         name: 'Harsh Aggarwal',
         url: 'https://www.tmmt.in/harsh-aggarwal',
-        image: 'https://www.tmmt.in/Harsh-Aggarwal.jpg',
+        image: 'https://www.tmmt.in/Harsh-Aggarwal.webp',
         jobTitle: 'Co-Founder',
         worksFor: { '@type': 'Organization', name: 'TMMT', url: 'https://www.tmmt.in' },
         knowsAbout: ['UI Architecture', 'Brand Systems', 'Ecommerce Design', 'Client Strategy', 'Component-Driven Development'],
@@ -60,7 +60,7 @@ const HarshAggarwal: React.FC = () => {
         {/* Left Profile Column */}
         <div style={{ textAlign: 'left' }}>
           <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.08)', marginBottom: '30px' }}>
-            <img src="/Harsh-Aggarwal.jpg" alt="Harsh Aggarwal" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/Harsh-Aggarwal.webp" alt="Harsh Aggarwal" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <span style={{ color: COLORS.accent, fontWeight: 600, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>Co-Founder</span>
           <h1 style={{ fontSize: '48px', fontWeight: 700, margin: '10px 0 20px', letterSpacing: '-0.03em' }}>Harsh Aggarwal</h1>

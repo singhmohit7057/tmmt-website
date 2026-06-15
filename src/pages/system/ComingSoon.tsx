@@ -14,7 +14,7 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7'
   };
@@ -67,7 +67,7 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
         title={`${pageName} | Coming Soon`}
         description="We are engineering a space for founders and creators. Join the waitlist to be notified first."
         path={window.location.pathname}
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
         robots="noindex, nofollow"
       />
 
@@ -86,7 +86,7 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ pageName = "TMMT" }) => {
         boxSizing: 'border-box',
         zIndex: 2
       }}>
-        <img src="/logo.png" alt="TMMT" style={{ height: '48px', marginBottom: '32px' }} />
+        <img src="/logo.webp" alt="TMMT" style={{ height: '48px', marginBottom: '32px' }} />
         
         <h1 style={{ fontSize: 'clamp(32px, 8vw, 48px)', fontWeight: 700, letterSpacing: '-0.04em', margin: '0 0 16px', lineHeight: 1.1 }}>
           {pageName} is almost here.

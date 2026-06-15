@@ -14,7 +14,7 @@ const Branding: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7',
@@ -35,14 +35,14 @@ const Branding: React.FC = () => {
       parent: "Sub-brand of Label Muskaan Singh",
       desc: "Full-scale brand scaling including HSN classification, Trade Name amendments, and APOB (Additional Place of Business) registrations for FBA/FBF fulfillment centers to secure Prime/Assured badges. Managed Trademark applications and end-to-end Myntra/Amazon onboarding.",
       tech: ["APOB REGISTRATION", "GST HSN MAPPING", "TRADEMARK FILING", "FBA/FBF SETUP"],
-      image: "/services/ibtida-logo.png" 
+      image: "/services/ibtida-logo.webp" 
     },
     {
       label: "CORPORATE FOUNDATION",
       title: "Amoha Civil",
       desc: "GST registration, current account setup, and domain procurement for a construction business entering the market. The business side handled before day one.",
       tech: ["ENTITY FORMATION", "TREASURY SETUP", "DOMAIN PROCUREMENT", "BRAND DNA"],
-      image: "/services/amoha-logo.png"
+      image: "/services/amoha-logo.webp"
     }
   ];
 
@@ -54,7 +54,7 @@ const Branding: React.FC = () => {
         title="Brand Identity & Business Setup for Ecommerce"
         description="We handle brand identity, GST registration, HSN mapping, trademark filing, APOB setup, and marketplace onboarding — everything you need to launch and sell legally."
         path="/services/branding"
-        ogImage="/services/brand.png"
+        ogImage="/services/brand.webp"
       />
 
       {/* 1. HERO SECTION */}
@@ -100,7 +100,7 @@ const Branding: React.FC = () => {
             boxShadow: '0 20px 40px rgba(0,0,0,0.08)',
             border: `1px solid ${COLORS.border}`
           }}>
-            <div style={{ fontSize: '12px', fontWeight: 700, color: '#86868b', marginBottom: '20px', letterSpacing: '1px' }}>ENTITY STATUS: ACTIVE</div>
+            <div style={{ fontSize: '12px', fontWeight: 700, color: '#6e6e73', marginBottom: '20px', letterSpacing: '1px' }}>ENTITY STATUS: ACTIVE</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
                 { label: 'GST / HSN Mapping', status: '✓ Verified' },
@@ -171,7 +171,7 @@ const Branding: React.FC = () => {
               <span style={{ fontSize: '11px', fontWeight: 700, color: COLORS.accent }}>{project.label}</span>
               <h3 style={{ fontSize: isMobile ? '32px' : '42px', margin: '10px 0' }}>{project.title}</h3>
               {project.parent && <div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '10px', opacity: 0.8 }}>{project.parent}</div>}
-              <p style={{ color: index % 2 === 0 ? COLORS.subtext : '#86868b', fontSize: '17px', marginBottom: '25px', lineHeight: 1.6 }}>{project.desc}</p>
+              <p style={{ color: index % 2 === 0 ? COLORS.subtext : '#6e6e73', fontSize: '17px', marginBottom: '25px', lineHeight: 1.6 }}>{project.desc}</p>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 {project.tech.map(t => (
                   <span key={t} style={{ fontSize: '10px', fontWeight: 700, padding: '6px 12px', backgroundColor: index % 2 === 0 ? '#fff' : 'rgba(255,255,255,0.1)', borderRadius: '6px', border: index % 2 === 0 ? `1px solid ${COLORS.border}` : 'none' }}>{t}</span>

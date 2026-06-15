@@ -37,14 +37,14 @@ const NotFound: React.FC = () => {
         title="404 | Page Not Found"
         description="The page you’re looking for might have been moved, deleted, or perhaps it never existed in this dimension."
         path="/404"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       <h1 style={{ fontSize: '120px', fontWeight: 700, margin: 0, opacity: 0.1 }}>404</h1>
       <h2 style={{ fontSize: '40px', fontWeight: 600, marginTop: '-40px' }}>
         The page you’re looking for can’t be found.
       </h2>
-      <p style={{ fontSize: '19px', color: '#86868b', maxWidth: '500px', lineHeight: '1.5' }}>
+      <p style={{ fontSize: '19px', color: '#6e6e73', maxWidth: '500px', lineHeight: '1.5' }}>
         It might have been moved, deleted, or perhaps it never existed in this dimension.
       </p>
       <button 

@@ -12,7 +12,7 @@ const CookiePolicy: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7'
@@ -35,7 +35,7 @@ const CookiePolicy: React.FC = () => {
         title="Optimization Layers & Cookie Policy"
         description="Understand how TMMT uses localized data tokens and cookies to maintain core state switches and stabilize sub-400ms rendering performance interfaces."
         path="/cookie-policy"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       <span style={{ color: COLORS.accent, fontWeight: 600, textTransform: 'uppercase', fontSize: '12px', letterSpacing: '1px' }}>

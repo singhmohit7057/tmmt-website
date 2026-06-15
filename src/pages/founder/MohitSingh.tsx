@@ -8,7 +8,7 @@ const MohitSingh: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7'
@@ -40,7 +40,7 @@ const MohitSingh: React.FC = () => {
         title="Mohit Singh | Co-Founder"
         description="Mohit Singh is Co-Founder of TMMT, building ecommerce automation infrastructure, Python-FastAPI engines, marketplace integrations, and scalable seller workflow systems."
         path="/mohit-singh"
-        ogImage="/Mohit-Singh.jpg"
+        ogImage="/Mohit-Singh.webp"
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -48,7 +48,7 @@ const MohitSingh: React.FC = () => {
         '@type': 'Person',
         name: 'Mohit Singh',
         url: 'https://www.tmmt.in/mohit-singh',
-        image: 'https://www.tmmt.in/Mohit-Singh.jpg',
+        image: 'https://www.tmmt.in/Mohit-Singh.webp',
         jobTitle: 'Co-Founder',
         worksFor: { '@type': 'Organization', name: 'TMMT', url: 'https://www.tmmt.in' },
         knowsAbout: ['Ecommerce Automation', 'Python FastAPI', 'Marketplace Infrastructure', 'Inventory Synchronization', 'Seller Workflow Systems'],
@@ -60,7 +60,7 @@ const MohitSingh: React.FC = () => {
         {/* Left Profile Column */}
         <div style={{ textAlign: 'left' }}>
           <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.08)', marginBottom: '30px' }}>
-            <img src="/Mohit-Singh.jpg" alt="Mohit Singh" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/Mohit-Singh.webp" alt="Mohit Singh" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <span style={{ color: COLORS.accent, fontWeight: 600, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1.5px' }}>Co-Founder</span>
           <h1 style={{ fontSize: '48px', fontWeight: 700, margin: '10px 0 20px', letterSpacing: '-0.03em' }}>Mohit Singh</h1>

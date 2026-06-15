@@ -25,7 +25,7 @@ const ContactForm: React.FC = () => {
     return (
       <div style={{ padding: '40px', textAlign: 'center', backgroundColor: '#f5f5f7', borderRadius: '24px' }}>
         <h3 style={{ fontSize: '24px', fontWeight: 600 }}>Message Sent.</h3>
-        <p style={{ color: '#86868b', marginTop: '10px' }}>We'll get back to you within 24 hours.</p>
+        <p style={{ color: '#6e6e73', marginTop: '10px' }}>We'll get back to you within 24 hours.</p>
         <button 
           onClick={() => setStatus('idle')}
           style={{ marginTop: '20px', color: '#0071e3', background: 'none', border: 'none', cursor: 'pointer' }}

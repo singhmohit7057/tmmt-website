@@ -21,7 +21,7 @@ const Homepage: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bgLight: '#f5f5f7',
     border: '#d2d2d7',
@@ -49,27 +49,27 @@ const Homepage: React.FC = () => {
   const platforms = [
     {
       name: 'Shopify',
-      logo: '/ecom/shopify.png'
+      logo: '/ecom/shopify.webp'
     },
     {
       name: 'Myntra',
-      logo: '/ecom/myntra.png'
+      logo: '/ecom/myntra.webp'
     },
     {
       name: 'Amazon',
-      logo: '/ecom/amazon.jpg'
+      logo: '/ecom/amazon.webp'
     },
     {
       name: 'Flipkart',
-      logo: '/ecom/flipkart.png'
+      logo: '/ecom/flipkart.webp'
     },
     {
       name: 'Ajio',
-      logo: '/ecom/ajio.png'
+      logo: '/ecom/ajio.webp'
     },
     {
       name: 'Meesho',
-      logo: '/ecom/meesho.png'
+      logo: '/ecom/meesho.webp'
     },
   ];
 
@@ -78,37 +78,37 @@ const Homepage: React.FC = () => {
       title: 'Web & Application Engineering',
       desc: 'Bespoke web applications, internal tools, and client dashboards engineered with React and FastAPI. Structured for high performance, scalable APIs, and deep operational integration.',
       link: '/services/web-design',
-      img: '/services/web.png'
+      img: '/services/web.webp'
     },
     {
       title: 'Ecommerce Automation',
       desc: 'Inventory synchronization, seller workflows, marketplace automation, and operational systems for scalable ecommerce operations.',
       link: '/services/automation',
-      img: '/services/automation.png'
+      img: '/services/automation.webp'
     },
     {
       title: 'Marketplace Operations',
       desc: 'Operational infrastructure for Shopify, Myntra, Amazon, Flipkart, Ajio, and Meesho marketplace businesses.',
       link: '/services/ecommerce-help',
-      img: '/services/marketplace.png'
+      img: '/services/marketplace.webp'
     },
     {
       title: 'Branding Systems',
       desc: 'Brand identity systems and ecommerce-focused visual architecture for fashion brands and D2C businesses.',
       link: '/services/branding',
-      img: '/services/brand.png'
+      img: '/services/brand.webp'
     },
     {
       title: 'Ads Management Systems',
       desc: 'Data-driven advertising workflows and ecommerce campaign infrastructure for marketplace and D2C brands.',
       link: '/services/ads-management',
-      img: '/services/performance.png'
+      img: '/services/performance.webp'
     },
     {
       title: 'Social Media Systems',
       desc: 'Content systems, social commerce workflows, and brand communication infrastructure for ecommerce businesses.',
       link: '/services/social-media',
-      img: '/services/social.png'
+      img: '/services/social.webp'
     }
   ];
 
@@ -167,7 +167,7 @@ const Homepage: React.FC = () => {
         robots="index, follow"
         author="TMMT Team"
         type="website"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       {/* HERO SECTION */}

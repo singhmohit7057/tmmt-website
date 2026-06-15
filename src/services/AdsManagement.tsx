@@ -14,7 +14,7 @@ const AdsManagement: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7',
@@ -37,7 +37,7 @@ const AdsManagement: React.FC = () => {
         title="Meta & Google Ads Management for Ecommerce Brands"
         description="We run Meta and Google Ads for D2C and marketplace brands with server-side CAPI tracking, audience exclusion logic, and ROAS-focused campaign architecture."
         path="/services/ads-management"
-        ogImage="/services/performance.png"
+        ogImage="/services/performance.webp"
       />
 
       {/* 1. HERO SECTION */}
@@ -139,7 +139,7 @@ const AdsManagement: React.FC = () => {
           {/* Meta Ads Expert Card */}
           <div style={{ padding: '40px', borderRadius: '32px', backgroundColor: COLORS.darkBg, color: '#fff' }}>
             <h3 style={{ fontSize: '28px', marginBottom: '20px' }}>Meta Ads Architecture.</h3>
-            <ul style={{ listStyle: 'none', padding: 0, color: '#86868b', lineHeight: '2.2', fontSize: '15px' }}>
+            <ul style={{ listStyle: 'none', padding: 0, color: '#6e6e73', lineHeight: '2.2', fontSize: '15px' }}>
               <li>• Advantage+ Shopping Campaign Logic</li>
               <li>• Creative Testing & Iteration Sprints</li>
               <li>• Full-Funnel Retargeting Architecture</li>

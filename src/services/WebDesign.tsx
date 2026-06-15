@@ -14,7 +14,7 @@ const WebDesign: React.FC = () => {
 
   const COLORS = { 
     text: '#1d1d1f', 
-    subtext: '#86868b', 
+    subtext: '#6e6e73', 
     accent: '#0071e3', 
     bg: '#f5f5f7', 
     border: '#d2d2d7',
@@ -66,7 +66,7 @@ const WebDesign: React.FC = () => {
       title: "Ecomsathi",
       desc: "An all-in-one ecommerce operations platform being built by TMMT — SKU generation, label cropping, batch PDF tools, and seller workflows unified into a single interface.",
       tech: ["Vite", "React", "TypeScript", "FastAPI", "SupaBase", "Railway", "Node.js + Express", "FFmpeg", "Sharp", "Tesseract.js", "pdf-lib", "jszip"],
-      image: "/services/ecomsathi.png",
+      image: "/services/ecomsathi.webp",
       link: "https://ecomsathi.vercel.app/"
     },
     {
@@ -74,7 +74,7 @@ const WebDesign: React.FC = () => {
       title: "Label Muskaan Singh",
       desc: "A Shopify ethnic fashion store with custom garment visualizations, RazorPay integration, and ShipRocket fulfillment. Sub-second navigation, fully mobile.",
       tech: ["Shopify", "RazorPay", "ShipRocket", "Liquid"],
-      image: "/services/labelmuskaansingh.png",
+      image: "/services/labelmuskaansingh.webp",
       link: "https://labelmuskaansingh.in"
     },
     {
@@ -82,7 +82,7 @@ const WebDesign: React.FC = () => {
       title: "Johar Foundation",
       desc: "Nonprofit website built with React and Web3Forms. Responsive, accessible, and optimized for organic search so donors and volunteers can actually find them.",
       tech: ["React", "Vite", "TypeScript", "Responsive UI", "Web3Forms"],
-      image: "/services/joharfoundation.png",
+      image: "/services/joharfoundation.webp",
       link: "https://joharfoundation.org"
     },
     {
@@ -90,7 +90,7 @@ const WebDesign: React.FC = () => {
       title: "GrabOffer",
       desc: "Lightweight deal-aggregator optimized for extreme performance with sub-second search and mobile responsiveness.",
       tech: ["Vite", "React", "TypeScript", "Vercel", "Web3Forms"],
-      image: "/services/graboffer.png",
+      image: "/services/graboffer.webp",
       link: "https://graboffer.vercel.app"
     },
     {
@@ -98,7 +98,7 @@ const WebDesign: React.FC = () => {
       title: "Muskaan Singh",
       desc: "Personal portfolio for fashion designer Muskaan Singh — minimal, editorial layout with smooth transitions and full mobile responsiveness.",
       tech: ["React", "Vite", "TypeScript", "Vercel", "Framer Motion", "Web3Forms"],
-      image: "/services/muskaansingh.png",
+      image: "/services/muskaansingh.webp",
       link: "https://www.muskaansingh.in"
     },
     {
@@ -106,7 +106,7 @@ const WebDesign: React.FC = () => {
       title: "WashMate",
       desc: "A laundry service management platform with booking flows, order tracking, and a clean dashboard built for speed and simplicity.",
       tech: ["React", "Vite", "TypeScript", "Vercel", "Framer Motion", "SupaBase"],
-      image: "/services/washmate.png",
+      image: "/services/washmate.webp",
       link: "https://washmate-tawny.vercel.app/"
     },
     {
@@ -114,7 +114,7 @@ const WebDesign: React.FC = () => {
       title: "Jarvis HMS",
       desc: "A full-stack clinic management system covering three modules — Doctor (appointments, prescriptions, consultations), Pharmacy (inventory, billing, near-expiry tracking, sales history), and Lab (bookings, sample processing, reports). Unified under a single role-based dashboard with real-time analytics and activity logs.",
       tech: ["Vite", "React", "TypeScript", "Tailwind", "Supabase", "Zustand", "Zod", "jsPDF + XLSX", "TanStack Table", "Recharts", "Sonner"],
-      image: "/services/jarvishms.png",
+      image: "/services/jarvishms.webp",
       link: "https://jarvis-hms.vercel.app/"
     },
     {
@@ -122,7 +122,7 @@ const WebDesign: React.FC = () => {
       title: "100 Year Clock",
       desc: "A high-precision JavaScript engine visualizing a century of time with frame-perfect mathematical accuracy.",
       tech: ["Github", "JavaScript", "CSS3"],
-      image: "/services/100yearclock.png",
+      image: "/services/100yearclock.webp",
       link: "https://singhmohit7057.github.io/100-year-clock/"
     }
   ];
@@ -135,7 +135,7 @@ const WebDesign: React.FC = () => {
         title="Ecommerce Web Design & React Development"
         description="We build fast, SEO-ready ecommerce websites using React, TypeScript, and Vite — optimized for Core Web Vitals, mobile, and search crawlability."
         path="/services/web-design"
-        ogImage="/services/web.png"
+        ogImage="/services/web.webp"
       />
 
 

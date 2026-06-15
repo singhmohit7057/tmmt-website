@@ -15,7 +15,7 @@ const Sitemap: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7'
@@ -112,7 +112,7 @@ const Sitemap: React.FC = () => {
         title="System Index Maps & Infrastructure Navigation"
         description="A complete directory outlining the operational architecture, infrastructure systems, engineering services, founder pages, and semantic frameworks across TMMT."
         path="/sitemap"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       {/* SCHEMA */}

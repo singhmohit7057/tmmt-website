@@ -14,7 +14,7 @@ const SocialNarrative: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7',
@@ -36,7 +36,7 @@ const SocialNarrative: React.FC = () => {
         title="Social Media Management & Content Production"
         description="We handle your brand's social media end to end — reels, posts, captions, scheduling, and growth across Instagram, LinkedIn, and YouTube Shorts."
         path="/services/social-media"
-        ogImage="/services/social.png"
+        ogImage="/services/social.webp"
       />
 
       {/* 1. HERO SECTION */}
@@ -156,7 +156,7 @@ const SocialNarrative: React.FC = () => {
               backgroundColor: '#fff',
               boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
             }}>
-              <img src="/services/pillar1.jpg" alt="Visual Prestige" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/services/pillar1.webp" alt="Visual Prestige" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div style={{ flex: 1 }}>
               <span style={{ fontSize: '11px', fontWeight: 700, color: COLORS.accent, textTransform: 'uppercase' }}>Pillar 01</span>
@@ -187,12 +187,12 @@ const SocialNarrative: React.FC = () => {
               backgroundColor: '#1a1a1a',
               boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
             }}>
-              <img src="/services/pillar2.jpg" alt="Algorithmic Distribution" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/services/pillar2.webp" alt="Algorithmic Distribution" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div style={{ flex: 1 }}>
               <span style={{ fontSize: '11px', fontWeight: 700, color: COLORS.accent, textTransform: 'uppercase' }}>Pillar 02</span>
               <h3 style={{ fontSize: isMobile ? '32px' : '42px', margin: '15px 0' }}>Distribution Logic.</h3>
-              <p style={{ color: '#86868b', fontSize: '17px', lineHeight: 1.6 }}>
+              <p style={{ color: '#6e6e73', fontSize: '17px', lineHeight: 1.6 }}>
                 Good content doesn't reach anyone by accident. We optimize posting time, reel hooks, and keyword metadata for each platform — so the algorithm works for you, not against you.
               </p>
             </div>

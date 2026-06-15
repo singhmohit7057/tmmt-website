@@ -14,7 +14,7 @@ const Services: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bgLight: '#f5f5f7',
     border: '#d2d2d7'
@@ -53,7 +53,7 @@ const Services: React.FC = () => {
       title: "Web Engineering.",
       desc: "React and TypeScript frontends that load fast and don't break on mobile. Built for ecommerce, optimized for search.",
       tags: ["React", "Vite", "TypeScript"],
-      image: "/services/web.png",
+      image: "/services/web.webp",
       path: "/services/web-design"
     },
     {
@@ -61,7 +61,7 @@ const Services: React.FC = () => {
       title: "Workflow Automation.",
       desc: "Eliminate manual tasks with custom Python scripts. We engineer label processors, inventory scrapers, and bank settlement tools that work 24/7.",
       tags: ["Python", "Automation", "APIs"],
-      image: "/services/automation.png",
+      image: "/services/automation.webp",
       path: "/services/automation"
     },
     {
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
       title: "Marketplace Infrastructure.",
       desc: "Expert support for the world's largest platforms. We manage and optimize your presence across Shopify, Amazon, Flipkart, Myntra, and Meesho.",
       tags: ["Multi-Channel", "Logistics", "Sync"],
-      image: "/services/marketplace.png",
+      image: "/services/marketplace.webp",
       path: "/services/ecommerce-help"
     },
     {
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
       title: "Brand Architecture.",
       desc: "Logo, packaging, GST filing, trademark, and marketplace onboarding — the full setup you need to launch a brand on Indian marketplaces.",
       tags: ["Design", "Identity", "IP"],
-      image: "/services/brand.png",
+      image: "/services/brand.webp",
       path: "/services/branding"
     },
     {
@@ -85,7 +85,7 @@ const Services: React.FC = () => {
       title: "Performance Marketing.",
       desc: "Meta and Google Ads with server-side CAPI tracking and audience exclusion logic. We track every rupee spent and cut what isn't working.",
       tags: ["Meta Ads", "Google Ads", "ROAS"],
-      image: "/services/performance.png",
+      image: "/services/performance.webp",
       path: "/services/ads-management"
     },
     {
@@ -93,7 +93,7 @@ const Services: React.FC = () => {
       title: "Social Narrative.",
       desc: "Reels, posts, captions, and scheduling across Instagram, LinkedIn, and YouTube Shorts. Content produced and posted by us.",
       tags: ["Organic", "Curation", "Growth"],
-      image: "/services/social.png",
+      image: "/services/social.webp",
       path: "/services/social-media"
     }
   ];
@@ -106,7 +106,7 @@ const Services: React.FC = () => {
         title="Core Technical Capabilities & Solutions"
         description="Explore TMMT's core solutions engineered for business performance: high-speed frontends, headless data scrapers, automated multi-channel syncing, and data-backed ad networks."
         path="/services"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       {/* 1. HERO SECTION */}

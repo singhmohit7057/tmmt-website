@@ -12,7 +12,7 @@ const TermsAndConditions: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bg: '#f5f5f7',
     border: '#d2d2d7'
@@ -35,7 +35,7 @@ const TermsAndConditions: React.FC = () => {
         title="Terms & Conditions of Architecture"
         description="Read the operational terms, intellectual property parameters, and liability boundaries governing systems deployed across the TMMT ecosystem."
         path="/terms-and-conditions"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       <span style={{ color: COLORS.accent, fontWeight: 600, textTransform: 'uppercase', fontSize: '12px', letterSpacing: '1px' }}>

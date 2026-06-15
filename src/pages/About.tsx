@@ -17,7 +17,7 @@ const About: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bgLight: '#f5f5f7',
     border: '#d2d2d7',
@@ -64,7 +64,7 @@ const About: React.FC = () => {
         title="About TMMT"
         description="TMMT develops ecommerce infrastructure systems, marketplace automation workflows, inventory synchronization systems, operational dashboards, and scalable commerce operations for modern brands."
         path="/about"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       {/* HERO */}
@@ -220,7 +220,7 @@ const About: React.FC = () => {
             {
               name: 'Mohit Singh',
               role: 'Co-Founder',
-              img: '/Mohit-Singh.jpg',
+              img: '/Mohit-Singh.webp',
               desc:
                 'Mohit builds the backend — Python engines, marketplace API integrations, automation workflows, and the infrastructure that keeps everything running.',
               link: '/mohit-singh'
@@ -228,7 +228,7 @@ const About: React.FC = () => {
             {
               name: 'Harsh Aggarwal',
               role: 'Co-Founder',
-              img: '/Harsh-Aggarwal.jpg',
+              img: '/Harsh-Aggarwal.webp',
               desc:
                 'Harsh handles what the client sees — brand systems, UI, and how all of it gets communicated across marketplaces and platforms.',
               link: '/harsh-aggarwal'

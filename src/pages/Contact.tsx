@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
 
   const COLORS = {
     text: '#1d1d1f',
-    subtext: '#86868b',
+    subtext: '#6e6e73',
     accent: '#0071e3',
     bgLight: '#f5f5f7',
     border: '#d2d2d7',
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
         title="Contact TMMT"
         description="Contact TMMT for ecommerce infrastructure systems, marketplace automation workflows, inventory synchronization systems, operational dashboards, and scalable commerce operations."
         path="/contact"
-        ogImage="/tmmt-logo.png"
+        ogImage="/tmmt-logo.webp"
       />
 
       {/* CONTACT + ORGANIZATION SCHEMA */}
