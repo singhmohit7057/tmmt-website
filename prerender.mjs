@@ -484,12 +484,14 @@ const ROUTES = [
     title: 'TMMT Community | Coming Soon',
     description: 'The TMMT community is coming soon. Join the waitlist to get early access.',
     ogImage: `${BASE}/tmmt-logo.webp`,
+    robots: 'noindex, nofollow',
   },
   {
     path: '/services/soon',
     title: 'New Services | Coming Soon – TMMT',
     description: 'New TMMT services are on the way. Join the waitlist to be the first to know.',
     ogImage: `${BASE}/tmmt-logo.webp`,
+    robots: 'noindex, nofollow',
   },
 ];
 
@@ -565,6 +567,11 @@ for (const rawRoute of ROUTES) {
     .replace(
       /<meta\s+name="twitter:image"\s+content="[^"]*"\s*\/>/,
       `<meta name="twitter:image" content="${route.ogImage}" />`
+    )
+    // Robots
+    .replace(
+      /<meta\s+name="robots"\s+content="[^"]*"\s*\/>/,
+      `<meta name="robots" content="${route.robots || 'index, follow'}" />`
     );
 
   // Inject profile Open Graph tags for founder pages

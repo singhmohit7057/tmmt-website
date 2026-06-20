@@ -2,85 +2,29 @@
 
 > Ecommerce infrastructure and marketplace automation systems for D2C and fashion brands.
 
-Website:
-https://www.tmmt.in
+## Core Pages
 
-Canonical:
-https://www.tmmt.in
-
-## Core Areas
-
-- Ecommerce Automation
-- Marketplace Infrastructure
-- Shopify Automation
-- Inventory Synchronization
-- Seller Operations
-- Catalog Management
-- API Integrations
-- Operational Dashboards
-
-## Key Resources
-
-Homepage:
-https://www.tmmt.in
-
-About:
-https://www.tmmt.in/about
-
-Services:
-https://www.tmmt.in/services
-
-Contact:
-https://www.tmmt.in/contact
+- [Homepage](https://www.tmmt.in)
+- [About TMMT](https://www.tmmt.in/about)
+- [Services Overview](https://www.tmmt.in/services)
+- [Contact TMMT](https://www.tmmt.in/contact)
+- [Careers](https://www.tmmt.in/careers)
 
 ## Service Pages
 
-Web Design:
-https://www.tmmt.in/services/web-design
-
-Automation:
-https://www.tmmt.in/services/automation
-
-Ecommerce Help:
-https://www.tmmt.in/services/ecommerce-help
-
-Branding:
-https://www.tmmt.in/services/branding
-
-Social Media:
-https://www.tmmt.in/services/social-media
-
-Ads Management:
-https://www.tmmt.in/services/ads-management
+- [Web Design & Engineering](https://www.tmmt.in/services/web-design)
+- [Ecommerce Automation](https://www.tmmt.in/services/automation)
+- [Marketplace Operations](https://www.tmmt.in/services/ecommerce-help)
+- [Brand Architecture](https://www.tmmt.in/services/branding)
+- [Social Media Management](https://www.tmmt.in/services/social-media)
+- [Ads Management](https://www.tmmt.in/services/ads-management)
 
 ## Founders
 
-Mohit Singh:
-https://www.tmmt.in/mohit-singh
-
-Harsh Aggarwal:
-https://www.tmmt.in/harsh-aggarwal
-
-## Supported Platforms
-
-- Shopify
-- Amazon
-- Flipkart
-- Myntra
-- Ajio
-- Meesho
-- WooCommerce
+- [Mohit Singh — Co-Founder](https://www.tmmt.in/mohit-singh)
+- [Harsh Aggarwal — Co-Founder](https://www.tmmt.in/harsh-aggarwal)
 
 ## Machine Readable Resources
 
-Markdown Directory:
-https://www.tmmt.in/md/
-
-Sitemap:
-https://www.tmmt.in/sitemap.xml
-
-Markdown Sitemap:
-https://www.tmmt.in/sitemap-md.xml
-
-Extended AI Retrieval File:
-https://www.tmmt.in/llms-full.txt
+- [Extended AI Retrieval File](https://www.tmmt.in/llms-full.txt)
+- [Sitemap XML](https://www.tmmt.in/sitemap.xml)

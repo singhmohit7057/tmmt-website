@@ -1,6 +1,8 @@
 {
   "redirects": [
-    { "source": "/resources/:path*", "destination": "/", "permanent": true }
+    { "source": "/resources/:path*", "destination": "/", "permanent": true },
+    { "source": "/services/ecom", "destination": "/services/ecommerce-help", "permanent": true },
+    { "source": "/services/ecom/:path*", "destination": "/services/ecommerce-help", "permanent": true }
   ],
 
   "rewrites": [
@@ -23,6 +25,10 @@
         {
           "key": "Content-Type",
           "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
         }
       ]
     },

@@ -158,7 +158,7 @@ const Footer: React.FC = () => {
             About
           </Link>
 
-          <Link to="/community" style={linkStyle}>
+          <Link to="/community" style={linkStyle} rel="nofollow">
             Community
           </Link>
 
