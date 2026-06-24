@@ -11,6 +11,9 @@ import Footer from './shared/Footer';
 // Homepage is loaded eagerly to prevent CLS from footer jumping on initial load
 import Homepage from './pages/Homepage';
 
+// Macrodata
+import PageTracker from './macrodata/components/PageTracker';
+
 // Main Pages
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
@@ -38,6 +41,9 @@ const HarshAggarwal = lazy(() => import('./pages/founder/HarshAggarwal'));
 const Sitemap = lazy(() => import('./pages/system/Sitemap'));
 const ComingSoon = lazy(() => import('./pages/system/ComingSoon'));
 const NotFound = lazy(() => import('./pages/system/NotFound'));
+
+// Macrodata — Live Office
+const Office = lazy(() => import('./macrodata/pages/Office'));
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -90,6 +96,7 @@ const App: React.FC = () => {
             <Route path="/harsh-aggarwal" element={<HarshAggarwal />} />
 
             <Route path="/sitemap" element={<Sitemap />} />
+            <Route path="/office" element={<Office />} />
 
             <Route path="/services/soon" element={<ComingSoon pageName="New Services" />} />
             <Route path="/community" element={<ComingSoon pageName="TMMT Community" />} />
@@ -101,6 +108,7 @@ const App: React.FC = () => {
 
       {!isComingSoonPage && <Footer />}
 
+      <PageTracker />
       <Analytics />
       <SpeedInsights />
     </div>
