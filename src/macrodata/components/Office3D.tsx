@@ -381,7 +381,6 @@ function SuiteAFurniture() {
   const CHAIR = '#2e2a26';
   const LED   = '#0071e3';
   const PC    = '#222';
-  const WOOD  = '#c4a97a';
   // Suite A: c=1,r=1 → center x=-5.5, z=-5.5
   // bounds: x:[-7.25..-3.75], z:[-7.25..-3.75]
   const X = -5.5; const Z = -5.5;
