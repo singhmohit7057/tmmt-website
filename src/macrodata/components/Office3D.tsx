@@ -122,17 +122,39 @@ function InnerDoor({ cx, cz, axis, cellW = CS }: {
   );
 }
 
-function Dot({ ox, oz, i }: { ox: number; oz: number; i: number }) {
-  const ref = useRef<THREE.Mesh>(null);
+const PERSON_COLORS = ['#4a90d9','#e8734a','#5bbf7a','#c97dd4','#e8c94a','#e84a6f','#4acfcf'];
+
+function Person({ ox, oz, i }: { ox: number; oz: number; i: number }) {
+  const ref = useRef<THREE.Group>(null);
   useFrame(() => {
-    if (ref.current) ref.current.position.y = 0.38 + Math.sin(Date.now() * 0.002 + i * 1.4) * 0.07;
+    if (ref.current) ref.current.position.y = Math.sin(Date.now() * 0.0018 + i * 1.4) * 0.03;
   });
-  const clr = `hsl(${(i * 67 + 200) % 360},65%,62%)`;
+  const col = PERSON_COLORS[i % PERSON_COLORS.length];
+  const px = ox + (i % 3 - 1) * 0.28;
+  const pz = oz + (Math.floor(i / 3) - 0.5) * 0.28;
   return (
-    <mesh ref={ref} position={[ox + (i % 3 - 1) * 0.22, 0.38, oz + Math.floor(i / 3) * 0.22]}>
-      <sphereGeometry args={[0.085, 8, 8]} />
-      <meshStandardMaterial color={clr} emissive={clr} emissiveIntensity={0.55} roughness={0.2} />
-    </mesh>
+    <group ref={ref} position={[px, 0, pz]}>
+      {/* head */}
+      <mesh position={[0, 0.58, 0]}>
+        <boxGeometry args={[0.13, 0.13, 0.13]} />
+        <meshStandardMaterial color="#f0d0a8" roughness={0.6} />
+      </mesh>
+      {/* body */}
+      <mesh position={[0, 0.38, 0]}>
+        <boxGeometry args={[0.16, 0.22, 0.1]} />
+        <meshStandardMaterial color={col} roughness={0.5} />
+      </mesh>
+      {/* left leg */}
+      <mesh position={[-0.045, 0.19, 0]}>
+        <boxGeometry args={[0.065, 0.18, 0.09]} />
+        <meshStandardMaterial color="#333" roughness={0.6} />
+      </mesh>
+      {/* right leg */}
+      <mesh position={[0.045, 0.19, 0]}>
+        <boxGeometry args={[0.065, 0.18, 0.09]} />
+        <meshStandardMaterial color="#333" roughness={0.6} />
+      </mesh>
+    </group>
   );
 }
 
@@ -160,11 +182,11 @@ function RoomTile({ x, z, w, d, floorColor, label, sub, count, isHall, onClick }
             {label}
           </div>
           {sub && <div style={{ fontSize: 6, color: active ? '#aaa' : '#777', fontFamily: 'system-ui', marginTop: 2 }}>{sub}</div>}
-          {active && <div style={{ fontSize: 7, color: GREEN, fontWeight: 700, fontFamily: 'system-ui', marginTop: 3 }}>{count} live</div>}
+          {active && <div style={{ fontSize: 7, color: GREEN, fontWeight: 700, fontFamily: 'system-ui', marginTop: 3 }}>{count} {count === 1 ? 'person' : 'people'}</div>}
         </div>
       </Html>
       {count > 0 && Array.from({ length: Math.min(count, 6) }).map((_, i) => (
-        <Dot key={i} ox={x} oz={z} i={i} />
+        <Person key={i} ox={x} oz={z} i={i} />
       ))}
     </group>
   );
@@ -211,6 +233,205 @@ function GrandHallFurniture() {
       <Box p={[ 0.35, 0.34, -0.72]} s={[0.58, 0.1, 0.52]} c={CUSHION} />
       <Box p={[-0.35, 0.54, -0.95]} s={[0.58, 0.38, 0.1]} c={CUSHION} />
       <Box p={[ 0.35, 0.54, -0.95]} s={[0.58, 0.38, 0.1]} c={CUSHION} />
+    </group>
+  );
+}
+
+function SuiteBFurniture() {
+  const BED_F  = '#e8e0d4';
+  const BED_B  = '#c8b89a';
+  const PILLOW = '#f5f0e8';
+  const SOFA   = '#7a6652';
+  const CUSHION= '#9a8268';
+  const WOOD   = '#c4a97a';
+  // Suite B: c=5,r=1 → center x=col(5)=5.5, z=row(1)=-5.5
+  // room bounds x:[3.75..7.25], z:[-7.25..-3.75]
+  const X = 5.5; const Z = -5.5;
+  return (
+    <group>
+      {/* ── Bed (against north wall) ── */}
+      <Box p={[X, 0.1,  Z - 0.5]} s={[1.4, 0.2, 1.8]} c={WOOD} />
+      <Box p={[X, 0.22, Z - 0.5]} s={[1.28, 0.2, 1.68]} c={BED_F} />
+      <Box p={[X, 0.46, Z - 1.36]} s={[1.4, 0.48, 0.1]} c={BED_B} />
+      <Box p={[X - 0.32, 0.36, Z - 1.18]} s={[0.36, 0.1, 0.28]} c={PILLOW} />
+      <Box p={[X + 0.32, 0.36, Z - 1.18]} s={[0.36, 0.1, 0.28]} c={PILLOW} />
+      <Box p={[X, 0.33, Z - 0.3]} s={[1.24, 0.08, 1.2]} c={BED_B} />
+
+      {/* ── Sofa (against south inner wall at z=-3.75) ── */}
+      <Box p={[X, 0.22, Z + 1.3]} s={[1.2, 0.2, 0.5]} c={SOFA} />
+      <Box p={[X, 0.44, Z + 1.52]} s={[1.2, 0.36, 0.13]} c={SOFA} />
+      <Box p={[X - 0.52, 0.38, Z + 1.3]} s={[0.13, 0.28, 0.5]} c={SOFA} />
+      <Box p={[X + 0.52, 0.38, Z + 1.3]} s={[0.13, 0.28, 0.5]} c={SOFA} />
+      <Box p={[X, 0.34, Z + 1.28]} s={[0.92, 0.1, 0.4]} c={CUSHION} />
+    </group>
+  );
+}
+
+function FileRack({ x, z }: { x: number; z: number }) {
+  const METAL  = '#8a8a8a';
+  const SHELF  = '#aaa49a';
+  const FILES  = ['#4a7fc1','#c17a4a','#5aad6e','#c14a4a','#9b59b6'];
+  return (
+    <group>
+      {/* rack frame — back */}
+      <Box p={[x, 0.5, z + 0.66]} s={[0.9, 1.0, 0.04]} c={METAL} />
+      {/* rack frame — sides */}
+      <Box p={[x - 0.44, 0.5, z + 0.42]} s={[0.04, 1.0, 0.52]} c={METAL} />
+      <Box p={[x + 0.44, 0.5, z + 0.42]} s={[0.04, 1.0, 0.52]} c={METAL} />
+      {/* shelves */}
+      <Box p={[x, 0.14, z + 0.42]} s={[0.88, 0.04, 0.5]} c={SHELF} />
+      <Box p={[x, 0.48, z + 0.42]} s={[0.88, 0.04, 0.5]} c={SHELF} />
+      <Box p={[x, 0.82, z + 0.42]} s={[0.88, 0.04, 0.5]} c={SHELF} />
+      <Box p={[x, 1.0,  z + 0.42]} s={[0.88, 0.04, 0.5]} c={SHELF} />
+      {/* files on bottom shelf */}
+      {FILES.slice(0, 4).map((c, i) => (
+        <Box key={`f0${i}`} p={[x - 0.3 + i * 0.18, 0.31, z + 0.42]} s={[0.12, 0.3, 0.42]} c={c} />
+      ))}
+      {/* files on middle shelf */}
+      {FILES.slice(1).map((c, i) => (
+        <Box key={`f1${i}`} p={[x - 0.28 + i * 0.18, 0.65, z + 0.42]} s={[0.12, 0.28, 0.42]} c={c} />
+      ))}
+    </group>
+  );
+}
+
+function ReceptionFurniture() {
+  // Contact room: c=4,r=1, foyer → center x=col(4)=2.5, pushed to north wall
+  const X = 2.5; const Z = -6.72;
+  const WOOD  = '#c4a97a';
+  const DARK  = '#2e2a26';
+  const PHONE = '#1a1a1a';
+  return (
+    <group>
+      {/* reception desk */}
+      <Box p={[X, 0.36, Z]} s={[1.6, 0.06, 0.65]} c={WOOD} />
+      <Box p={[X - 0.76, 0.18, Z]} s={[0.06, 0.36, 0.65]} c={DARK} />
+      <Box p={[X + 0.76, 0.18, Z]} s={[0.06, 0.36, 0.65]} c={DARK} />
+      <Box p={[X, 0.18, Z + 0.3]} s={[1.6, 0.36, 0.06]} c={DARK} />
+      <Box p={[X, 0.18, Z - 0.3]} s={[1.6, 0.36, 0.06]} c={DARK} />
+
+      {/* telephone on desk */}
+      <Box p={[X + 0.3, 0.42, Z - 0.05]} s={[0.3, 0.05, 0.22]} c={PHONE} />
+      {/* handset */}
+      <Box p={[X + 0.3, 0.48, Z - 0.05]} s={[0.22, 0.04, 0.07]} c={PHONE} />
+      {/* keypad */}
+      <Box p={[X + 0.28, 0.43, Z + 0.04]} s={[0.18, 0.02, 0.1]} c='#333' />
+      {/* cord */}
+      <Box p={[X + 0.18, 0.42, Z - 0.05]} s={[0.04, 0.02, 0.04]} c='#444' />
+    </group>
+  );
+}
+
+function CareersFurniture() {
+  // Careers: desk against south wall, chair on north (window) side facing door
+  const X = -2.5; const Z = -6.4;
+  const WOOD  = '#b8955a';
+  const DARK  = '#2e2a26';
+  const MON   = '#1a1a1a';
+  const PAPER = '#f0ece4';
+  return (
+    <group>
+      {/* recruitment desk against south wall, monitor faces north (window) */}
+      {/* main surface */}
+      <Box p={[X, 0.36, Z + 0.25]} s={[1.5, 0.06, 0.65]} c={WOOD} />
+      {/* back panel (south, faces into room) */}
+      <Box p={[X, 0.18, Z + 0.57]} s={[1.5, 0.36, 0.06]} c={DARK} />
+      {/* front panel (north, faces window) */}
+      <Box p={[X, 0.18, Z - 0.07]} s={[1.5, 0.36, 0.06]} c={DARK} />
+      {/* side panels */}
+      <Box p={[X - 0.73, 0.18, Z + 0.25]} s={[0.06, 0.36, 0.65]} c={DARK} />
+      <Box p={[X + 0.73, 0.18, Z + 0.25]} s={[0.06, 0.36, 0.65]} c={DARK} />
+
+      {/* monitor facing north (toward window) */}
+      <Box p={[X + 0.2, 0.7, Z + 0.02]} s={[0.7, 0.45, 0.04]} c={MON} />
+      <Box p={[X + 0.2, 0.44, Z + 0.02]} s={[0.08, 0.04, 0.04]} c={MON} />
+      {/* keyboard */}
+      <Box p={[X + 0.2, 0.4, Z + 0.24]} s={[0.44, 0.03, 0.16]} c='#888' />
+
+      {/* resume stack */}
+      <Box p={[X - 0.48, 0.4, Z + 0.14]} s={[0.28, 0.03, 0.2]} c={PAPER} />
+      <Box p={[X - 0.48, 0.43, Z + 0.14]} s={[0.26, 0.02, 0.18]} c={PAPER} />
+
+      {/* HIRING sign */}
+      <Box p={[X + 0.65, 0.55, Z + 0.04]} s={[0.22, 0.14, 0.03]} c='#0071e3' />
+      <Box p={[X + 0.65, 0.42, Z + 0.04]} s={[0.04, 0.04, 0.03]} c={DARK} />
+
+      {/* chair on window side (north), facing south toward door */}
+      <Box p={[X - 0.1, 0.28, Z - 0.3]} s={[0.38, 0.05, 0.38]} c='#6a5a4a' />
+      <Box p={[X - 0.1, 0.52, Z - 0.5]} s={[0.38, 0.32, 0.05]} c='#6a5a4a' />
+      <Box p={[X - 0.1, 0.16, Z - 0.3]} s={[0.05, 0.32, 0.05]} c={DARK} />
+    </group>
+  );
+}
+
+function LegalRoomFurniture() {
+  // Privacy c2, Terms c3, Cookies c4 — all at z=6.25
+  return (
+    <group>
+      <FileRack x={-2.5} z={6.25} />
+      <FileRack x={ 0.0} z={6.25} />
+      <FileRack x={ 2.5} z={6.25} />
+    </group>
+  );
+}
+
+function SuiteAFurniture() {
+  const DESK  = '#c4a97a';
+  const MON   = '#1a1a1a';
+  const CHAIR = '#2e2a26';
+  const LED   = '#0071e3';
+  const PC    = '#222';
+  const WOOD  = '#c4a97a';
+  // Suite A: c=1,r=1 → center x=-5.5, z=-5.5
+  // bounds: x:[-7.25..-3.75], z:[-7.25..-3.75]
+  const X = -5.5; const Z = -5.5;
+
+  return (
+    <group>
+      {/* ── Desktop setup (north wall, against z=-7.25) ── */}
+      {/* desk surface */}
+      <Box p={[X, 0.38, Z - 0.95]} s={[2.0, 0.06, 0.7]} c={DESK} />
+      {/* desk legs */}
+      <Box p={[X - 0.92, 0.19, Z - 0.95]} s={[0.06, 0.38, 0.06]} c={DESK} />
+      <Box p={[X + 0.92, 0.19, Z - 0.95]} s={[0.06, 0.38, 0.06]} c={DESK} />
+      <Box p={[X - 0.92, 0.19, Z - 1.28]} s={[0.06, 0.38, 0.06]} c={DESK} />
+      <Box p={[X + 0.92, 0.19, Z - 1.28]} s={[0.06, 0.38, 0.06]} c={DESK} />
+      {/* monitor */}
+      <Box p={[X, 0.72, Z - 1.22]} s={[0.82, 0.52, 0.04]} c={MON} />
+      <Box p={[X, 0.46, Z - 1.22]} s={[0.1, 0.04, 0.04]} c={MON} />
+      {/* keyboard */}
+      <Box p={[X, 0.42, Z - 0.82]} s={[0.5, 0.03, 0.18]} c='#888' />
+      {/* mouse */}
+      <Box p={[X + 0.34, 0.42, Z - 0.82]} s={[0.1, 0.04, 0.14]} c='#555' />
+      {/* desk chair */}
+      <Box p={[X, 0.42, Z - 0.42]} s={[0.42, 0.05, 0.42]} c={CHAIR} />
+      <Box p={[X, 0.72, Z - 0.24]} s={[0.42, 0.38, 0.05]} c={CHAIR} />
+      <Box p={[X, 0.24, Z - 0.42]} s={[0.05, 0.48, 0.05]} c={CHAIR} />
+
+      {/* ── Gaming setup (south side, against z=-3.75 inner wall) ── */}
+      {/* gaming desk */}
+      <Box p={[X, 0.38, Z + 1.16]} s={[2.0, 0.06, 0.65]} c='#1a1a2e' />
+      <Box p={[X - 0.92, 0.19, Z + 1.16]} s={[0.06, 0.38, 0.06]} c={PC} />
+      <Box p={[X + 0.92, 0.19, Z + 1.16]} s={[0.06, 0.38, 0.06]} c={PC} />
+      <Box p={[X - 0.92, 0.19, Z + 1.46]} s={[0.06, 0.38, 0.06]} c={PC} />
+      <Box p={[X + 0.92, 0.19, Z + 1.46]} s={[0.06, 0.38, 0.06]} c={PC} />
+      {/* ultrawide monitor — LED glow edge */}
+      <Box p={[X, 0.74, Z + 1.42]} s={[1.28, 0.52, 0.04]} c={MON} />
+      <Box p={[X, 0.74, Z + 1.44]} s={[1.3, 0.54, 0.02]} c={LED} op={0.3} />
+      <Box p={[X, 0.46, Z + 1.42]} s={[0.1, 0.04, 0.04]} c={MON} />
+      {/* gaming keyboard */}
+      <Box p={[X, 0.42, Z + 1.04]} s={[0.58, 0.03, 0.2]} c='#111' />
+      {/* RGB strip under desk */}
+      <Box p={[X, 0.32, Z + 0.88]} s={[1.9, 0.02, 0.02]} c={LED} op={0.6} />
+      {/* PC tower on desk side */}
+      <Box p={[X + 0.78, 0.6, Z + 1.26]} s={[0.22, 0.44, 0.32]} c={PC} />
+      <Box p={[X + 0.78, 0.6, Z + 1.26]} s={[0.23, 0.45, 0.33]} c={LED} op={0.12} />
+      {/* gaming chair */}
+      <Box p={[X, 0.44, Z + 0.70]} s={[0.44, 0.05, 0.44]} c='#8b0000' />
+      <Box p={[X, 0.74, Z + 0.52]} s={[0.44, 0.42, 0.06]} c='#8b0000' />
+      <Box p={[X, 0.26, Z + 0.70]} s={[0.05, 0.52, 0.05]} c={PC} />
+      {/* headset on desk */}
+      <Box p={[X - 0.72, 0.46, Z + 1.16]} s={[0.18, 0.06, 0.12]} c='#333' />
     </group>
   );
 }
@@ -263,6 +484,11 @@ function Building({ roomMap, onNav }: { roomMap: Map<string,RoomInfo>; onNav: (p
         count={cnt('home')} isHall={true} onClick={() => onNav('/')}
       />
       <GrandHallFurniture />
+      <SuiteBFurniture />
+      <SuiteAFurniture />
+      <LegalRoomFurniture />
+      <ReceptionFurniture />
+      <CareersFurniture />
 
       {/* ══ OUTER WALLS ══ */}
 
