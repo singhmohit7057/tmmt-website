@@ -81,7 +81,7 @@ const Homepage: React.FC = () => {
       img: '/services/web.webp'
     },
     {
-      title: 'Ecommerce Automation',
+      title: 'Workflow Automation',
       desc: 'Inventory synchronization, seller workflows, marketplace automation, and operational systems for scalable ecommerce operations.',
       link: '/services/automation',
       img: '/services/automation.webp'

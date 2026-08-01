@@ -86,6 +86,14 @@ const WebDesign: React.FC = () => {
       link: "https://joharfoundation.org"
     },
     {
+      label: "LIVE BUSINESS WEBSITE",
+      title: "Pawan Industries",
+      desc: "Business website for Pawan Industries — clean, professional layout built for credibility and lead generation.",
+      tech: ["React", "Vite", "TypeScript", "Responsive UI", "Vercel"],
+      image: "/services/pawanindustries.webp",
+      link: "https://pawan-industries.vercel.app"
+    },
+    {
       label: "SIDE PROJECT",
       title: "GrabOffer",
       desc: "Lightweight deal-aggregator optimized for extreme performance with sub-second search and mobile responsiveness.",
