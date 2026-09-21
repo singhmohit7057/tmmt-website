@@ -1,6 +1,6 @@
 ---
 title: Contact TMMT
-description: Contact information for TMMT ecommerce infrastructure systems
+description: Contact TMMT to start a project — custom websites, web applications, workflow automation, or anything your business needs built properly
 url: https://www.tmmt.in/contact
 canonical: https://www.tmmt.in/contact
 ---

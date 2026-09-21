@@ -1,24 +1,44 @@
 ---
 title: TMMT
-description: Ecommerce automation infrastructure and marketplace operation systems
+description: Custom websites, web applications, and workflow automation systems for businesses
 url: https://www.tmmt.in
 canonical: https://www.tmmt.in
 ---
 
 # TMMT
 
-TMMT builds ecommerce automation infrastructure and marketplace operation systems for fashion brands, D2C businesses, and multi-channel commerce operations.
+TMMT builds custom websites, web applications, and workflow automation systems for businesses of all kinds — from first websites to internal dashboards and automated business processes.
 
 ## Core Services
 
-- Web Engineering (React, TypeScript, Vite)
+- Web Engineering (React, TypeScript, Vite, FastAPI)
 - Workflow Automation (Python, FastAPI, OpenCV, Selenium)
-- Marketplace Infrastructure (Amazon, Myntra, Flipkart, Ajio, Meesho)
+- Marketplace Infrastructure (Amazon, Myntra, Flipkart, Ajio, Meesho, Shopify)
 - Brand Architecture (GST, Trademark, APOB, FBA/FBF)
 - Performance Marketing (Meta Ads, Google Ads, CAPI)
 - Social Media Management (Reels, Content, Growth)
 
-## Supported Platforms
+## What TMMT Builds
+
+- Custom business websites
+- Web applications and internal dashboards
+- Workflow automation pipelines
+- Membership and community platforms
+- Portfolio and brand websites
+- SaaS products
+- Ecommerce marketplace infrastructure
+
+## Industries Served
+
+- Any business needing a website or web application
+- Manufacturing and industrial businesses
+- Fashion Brands and D2C Businesses
+- Nonprofits and community organisations
+- Healthcare and clinics
+- Marketplace Sellers
+- Startups and SaaS products
+
+## Ecommerce Platforms
 
 - Shopify
 - Myntra
@@ -28,76 +48,74 @@ TMMT builds ecommerce automation infrastructure and marketplace operation system
 - Meesho
 - WooCommerce
 
-## Industries Served
+## Projects & Clients
 
-- Fashion Brands
-- Apparel Manufacturers
-- D2C Businesses
-- Marketplace Sellers
-- Ethnic Wear Brands
+### Pawan Industries
 
-## Projects & Brands
+Business website for Pawan Industries.
+URL: https://pawan-industries.vercel.app/
 
-### Ecomsathi
+### Akhil Bharatiya Goswami Sabha
 
-Platform being built by TMMT — all-in-one ecommerce operations toolkit.
-URL: https://ecomsathi.vercel.app/
+Community and membership platform for a Hindu religious organisation in West Bengal. 3-tier admin panel, member directory, matrimonial module, PDF ID cards, bilingual (English/Hindi).
+URL: https://akhilbharatiyagoswami.com
+
+### Muskaan Singh
+
+Brand portfolio website for fashion designer Muskaan Singh — founder of Label Muskaan Singh and Ibtida. Git-based admin panel via Decap CMS.
+URL: https://www.muskaansingh.in
+
+### Johar Foundation
+
+Nonprofit website built with React and Web3Forms.
+URL: https://joharfoundation.org
 
 ### Label Muskaan Singh
 
 Shopify ethnic fashion store.
 URL: https://www.labelmuskaansingh.in
-Instagram: https://www.instagram.com/labelmuskaansingh
-
-### IBTIDA
-
-Sub-brand of Label Muskaan Singh. Live on Amazon, Flipkart, Myntra, Ajio, Meesho.
-Instagram: https://www.instagram.com/_ibtidaofficial_
-Amazon: https://www.amazon.in/stores/Ibtida/page/387CF532-8348-482E-B4E2-DC9F549038F3
-Flipkart: https://www.flipkart.com/store/ibtida
-Myntra: https://www.myntra.com/ibtida
-
-### Muskaan Singh
-
-Fashion designer personal portfolio.
-URL: https://www.muskaansingh.in
 
 ### WashMate
 
 Laundry service management SaaS.
 URL: https://washmate-tawny.vercel.app/
 
-### Johar Foundation
+### Jarvis HMS
 
-Nonprofit organization website.
-URL: https://joharfoundation.org
+Full-stack clinic management system — Doctor, Pharmacy, and Lab modules with role-based dashboard.
+URL: https://jarvis-hms.vercel.app/
 
 ### GrabOffer
 
 Deal aggregator side project.
 URL: https://graboffer.vercel.app
 
+### Ecomsathi
+
+All-in-one ecommerce operations platform being built by TMMT.
+URL: https://ecomsathi.vercel.app/
+
 ## FAQ
 
 ### What does TMMT build?
 
-TMMT builds ecommerce automation systems, marketplace infrastructure, React websites, performance ad systems, and brand setup services for D2C and fashion brands.
+TMMT builds custom websites, web applications, internal dashboards, and workflow automation systems. Every project is engineered from scratch — no templates, no page builders.
 
-### Which platforms are supported?
+### Can TMMT automate business processes?
+
+Yes. TMMT builds custom automation for any repeatable business task — data sync, report generation, notification systems, document generation, and more.
+
+### What kinds of websites does TMMT build?
+
+Business websites, portfolio sites, nonprofit sites, community platforms, membership systems, SaaS products, and custom web applications.
+
+### What industries does TMMT work with?
+
+We work with businesses across industries — manufacturing, services, fashion, nonprofits, healthcare, startups, and more. We also have deep ecommerce expertise across major Indian marketplaces.
+
+### Which ecommerce platforms are supported?
 
 Shopify, Myntra, Amazon, Flipkart, Ajio, Meesho, and WooCommerce.
-
-### Does TMMT build custom operational systems?
-
-Yes. TMMT builds custom dashboards, Python automation engines, and marketplace workflow infrastructure.
-
-### Does TMMT support inventory synchronization?
-
-Yes. Real-time inventory sync across active marketplaces is a core service.
-
-### How quickly can TMMT onboard a new seller?
-
-7–10 days from registration to first sale for marketplace onboarding.
 
 ## Contact
 

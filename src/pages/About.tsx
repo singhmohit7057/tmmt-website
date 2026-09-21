@@ -34,20 +34,20 @@ const About: React.FC = () => {
 
   const faqs = [
     {
-      q: 'What ecommerce infrastructure systems does TMMT build?',
-      a: 'TMMT develops ecommerce infrastructure systems, marketplace automation workflows, inventory synchronization systems, operational dashboards, and scalable commerce operations.'
+      q: 'What does TMMT build?',
+      a: 'TMMT builds custom websites, web applications, internal dashboards, and workflow automation systems. Every project is engineered from scratch — no templates, no page builders.'
     },
     {
-      q: 'Which ecommerce marketplaces does TMMT support?',
-      a: 'TMMT supports Shopify, Myntra, Amazon, Flipkart, Ajio, Meesho, WooCommerce, and multi-channel ecommerce operations.'
+      q: 'What kinds of businesses does TMMT work with?',
+      a: 'We work with businesses of all kinds — manufacturing companies, service businesses, nonprofits, startups, and growing brands. If you need a strong web presence or better-automated operations, we can help.'
     },
     {
-      q: 'Does TMMT develop custom ecommerce automation systems?',
-      a: 'Yes. TMMT develops custom workflows, operational dashboards, automation systems, and ecommerce infrastructure solutions.'
+      q: 'Does TMMT do ecommerce?',
+      a: 'Yes. Ecommerce is a core strength — we have deep experience with Shopify, Amazon, Myntra, Flipkart, Ajio, and Meesho. Marketplace setup, inventory sync, and seller workflow automation are all part of what we do.'
     },
     {
-      q: 'Who does TMMT work with?',
-      a: 'TMMT works with fashion brands, D2C businesses, apparel manufacturers, and marketplace sellers.'
+      q: 'How does a project with TMMT start?',
+      a: 'You tell us what you need — a website, a tool, or a process you want automated. We scope it, agree on a plan, and build it. No lengthy onboarding, no unnecessary overhead.'
     }
   ];
 
@@ -62,7 +62,7 @@ const About: React.FC = () => {
     >
       <SEO
         title="About TMMT"
-        description="TMMT develops ecommerce infrastructure systems, marketplace automation workflows, inventory synchronization systems, operational dashboards, and scalable commerce operations for modern brands."
+        description="TMMT is a web engineering and automation studio. We build custom websites, web applications, internal tools, and workflow automation systems for businesses that want things done properly."
         path="/about"
         ogImage="/tmmt-logo.webp"
       />
@@ -96,7 +96,7 @@ const About: React.FC = () => {
             lineHeight: 1.1
           }}
         >
-          Ecommerce infrastructure, built to run.
+          We build websites, tools & automated systems.
         </h1>
 
         <p
@@ -108,7 +108,7 @@ const About: React.FC = () => {
             margin: '0 auto'
           }}
         >
-          TMMT builds the systems that keep ecommerce brands operational — across channels, at scale, without the manual overhead that usually comes with it.
+          TMMT is a web engineering and automation studio. We build custom websites, internal tools, and workflow automation systems for businesses that want things done properly — without the overhead that usually comes with it.
         </p>
       </section>
 
@@ -131,16 +131,16 @@ const About: React.FC = () => {
         >
           {[
             {
-              title: 'Marketplace Infrastructure',
-              desc: 'Multi-channel setup across Shopify, Amazon, Myntra, Flipkart, Ajio, and Meesho — catalog, orders, and sync.'
+              title: 'Web Engineering',
+              desc: 'Custom websites, web applications, internal dashboards, and client portals — built with React and FastAPI from scratch, no templates.'
             },
             {
-              title: 'Inventory Synchronization',
-              desc: 'Real-time stock updates across all active channels so nothing goes out of sync when orders come in.'
+              title: 'Workflow Automation',
+              desc: 'Custom automation pipelines that handle data sync, report generation, notifications, and any repeatable process your team does manually.'
             },
             {
-              title: 'Operational Automation',
-              desc: 'Custom Python workflows that replace the manual steps your team handles every day — labels, reconciliation, reporting.'
+              title: 'Marketplace & Ecommerce',
+              desc: 'Multi-channel setup across Shopify, Amazon, Myntra, Flipkart, Ajio, and Meesho — catalog, orders, inventory sync, and seller workflows.'
             }
           ].map((item, i) => (
             <div
@@ -222,7 +222,7 @@ const About: React.FC = () => {
               role: 'Co-Founder',
               img: '/Mohit-Singh.webp',
               desc:
-                'Mohit builds the backend — Python engines, marketplace API integrations, automation workflows, and the infrastructure that keeps everything running.',
+                'Mohit builds the technical side — custom web applications, backend APIs, automation systems, and the infrastructure that keeps everything running.',
               link: '/mohit-singh'
             },
             {
@@ -230,7 +230,7 @@ const About: React.FC = () => {
               role: 'Co-Founder',
               img: '/Harsh-Aggarwal.webp',
               desc:
-                'Harsh handles what the client sees — brand systems, UI, and how all of it gets communicated across marketplaces and platforms.',
+                'Harsh handles the client-facing side — brand systems, UI design, and how the product gets communicated clearly across every channel.',
               link: '/harsh-aggarwal'
             }
           ].map((founder, i) => (
@@ -363,9 +363,9 @@ const About: React.FC = () => {
                 'React frontends, FastAPI backends, PostgreSQL, Docker, and AWS — the actual stack behind what we ship.'
             },
             {
-              title: 'Marketplace Operations',
+              title: 'Web & App Delivery',
               desc:
-                'Catalog management, inventory sync, order routing, and platform compliance across every channel we support.'
+                'From scoping to deployment — frontend builds, backend APIs, and the connection layer between your systems and your users.'
             },
             {
               title: 'Monitoring & Automation',
@@ -429,7 +429,7 @@ const About: React.FC = () => {
 
       {/* FAQ */}
       <section
-        aria-label="Frequently Asked Questions about TMMT ecommerce infrastructure"
+        aria-label="Frequently Asked Questions about TMMT"
         style={sectionStyle}
       >
         <div

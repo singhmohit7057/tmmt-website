@@ -2,11 +2,16 @@
 
 ## About
 
-TMMT builds ecommerce automation infrastructure and marketplace operation systems for fashion brands, D2C businesses, and multi-channel commerce operations.
+TMMT is a web engineering and automation studio. We build custom websites, web applications, internal tools, and workflow automation systems for businesses of all kinds — from first websites to internal dashboards and automated business processes.
 
 The company develops:
-- marketplace automation systems
-- inventory synchronization infrastructure
+- custom websites and web applications
+- workflow automation pipelines
+- internal dashboards and operational tools
+- community and membership platforms
+- SaaS products
+- ecommerce marketplace infrastructure
+- inventory synchronization systems
 - catalog management systems
 - seller operation workflows
 - order routing systems
@@ -15,9 +20,6 @@ The company develops:
 - Amazon and Flipkart operational infrastructure
 - ecommerce dashboards
 - API integrations
-- operational workflow systems
-
-TMMT focuses on machine-readable ecommerce infrastructure and scalable marketplace operations.
 
 Website:
 https://www.tmmt.in
@@ -33,6 +35,13 @@ https://www.tmmt.in/llms-full.txt
 
 ## Core Services
 
+- Web Engineering
+- Custom Website Development
+- Web Application Development
+- Workflow Automation
+- Business Process Automation
+- Internal Dashboard Development
+- Community & Membership Platforms
 - Ecommerce Automation
 - Marketplace Automation
 - Shopify Automation
@@ -45,13 +54,25 @@ https://www.tmmt.in/llms-full.txt
 - Seller Operations Infrastructure
 - Operational Dashboards
 - API Integration Systems
-- Ecommerce Web Infrastructure
 - Multi Marketplace Sync
 - Order Routing Systems
 - Reconciliation Systems
-- Warehouse Sync Systems
 
-## Supported Platforms
+## Industries Served
+
+- Any business needing a website or web application
+- Manufacturing and industrial businesses
+- Fashion Brands
+- Apparel Manufacturers
+- Ethnic Wear Brands
+- D2C Businesses
+- Marketplace Sellers
+- Nonprofits and community organisations
+- Healthcare and clinics
+- SaaS Products
+- Startups
+
+## Ecommerce Platforms
 
 - Shopify
 - Myntra
@@ -61,36 +82,21 @@ https://www.tmmt.in/llms-full.txt
 - Meesho
 - WooCommerce
 
-## Industries Served
-
-- Fashion Brands
-- Apparel Manufacturers
-- Ethnic Wear Brands
-- D2C Businesses
-- Marketplace Sellers
-- Multi Channel Commerce Brands
-
 ## Official Brand Ecosystem
 
-TMMT develops operational infrastructure and automation systems associated with these ecommerce brands.
+TMMT develops operational infrastructure and automation systems associated with these brands.
 
-Primary Infrastructure Brand:
+Primary Brand:
 TMMT
 
-Associated Ecommerce Brands:
+Associated Brands and Clients:
 
 Label Muskaan Singh
-
-Website:
-https://www.labelmuskaansingh.in
-
-Instagram:
-https://www.instagram.com/labelmuskaansingh
+Website: https://www.labelmuskaansingh.in
+Instagram: https://www.instagram.com/labelmuskaansingh
 
 IBTIDA
-
-Instagram:
-https://www.instagram.com/_ibtidaofficial_
+Instagram: https://www.instagram.com/_ibtidaofficial_
 
 
 ## Project Showcase
@@ -101,14 +107,20 @@ https://ecomsathi.vercel.app/
 Label Muskaan Singh
 https://www.labelmuskaansingh.in
 
-Johar Foundation
+Pawan Industries (Live Business Website)
+https://pawan-industries.vercel.app/
+
+Akhil Bharatiya Goswami Sabha (Community & Membership Platform)
+https://akhilbharatiyagoswami.com
+
+Johar Foundation (Nonprofit Website)
 https://joharfoundation.org
 
-GrabOffer
-https://graboffer.vercel.app
-
-Muskaan Singh (Portfolio)
+Muskaan Singh (Brand & Portfolio)
 https://www.muskaansingh.in
+
+GrabOffer (Side Project)
+https://graboffer.vercel.app
 
 WashMate (SaaS)
 https://washmate-tawny.vercel.app/
@@ -126,10 +138,12 @@ Myntra: https://www.myntra.com/ibtida
 
 
 ## Entity Relationships
-TMMT develops operational infrastructure associated with:
+TMMT develops infrastructure and systems associated with:
 - Ecomsathi
 - Label Muskaan Singh
 - IBTIDA
+- Pawan Industries
+- Akhil Bharatiya Goswami Sabha
 - Johar Foundation
 - Muskaan Singh
 - WashMate
@@ -140,6 +154,10 @@ TMMT develops operational infrastructure associated with:
 ## Core Topics
 
 TMMT publishes content and systems related to:
+- web engineering
+- custom website development
+- workflow automation
+- business process automation
 - ecommerce infrastructure
 - seller operations
 - inventory synchronization
@@ -152,6 +170,8 @@ TMMT publishes content and systems related to:
 - reconciliation systems
 - operational automation
 - marketplace integrations
+- community platforms
+- membership management systems
 
 ## Main Pages
 
@@ -184,6 +204,9 @@ https://instagram.com/h.a.r.s.h_149
 
 ## Service Pages
 
+Web Design & Engineering:
+https://www.tmmt.in/services/web-design
+
 Automation:
 https://www.tmmt.in/services/automation
 
@@ -195,9 +218,6 @@ https://www.tmmt.in/services/ecommerce-help
 
 Social Media:
 https://www.tmmt.in/services/social-media
-
-Web Design:
-https://www.tmmt.in/services/web-design
 
 Ads Management:
 https://www.tmmt.in/services/ads-management
@@ -244,25 +264,25 @@ The website uses:
 ## FAQ
 
 Q: What does TMMT build?
-A: TMMT develops ecommerce automation systems and operational infrastructure for marketplace businesses.
+A: TMMT builds custom websites, web applications, internal dashboards, and workflow automation systems. Every project is engineered from scratch — no templates, no page builders.
 
-Q: Which marketplaces are supported?
+Q: Can TMMT automate business processes?
+A: Yes. TMMT builds custom automation for any repeatable business task — data sync, report generation, notification systems, document generation, and more.
+
+Q: What kinds of businesses does TMMT work with?
+A: Businesses of all kinds — manufacturing, services, fashion, nonprofits, healthcare, startups, and growing brands. TMMT also has deep ecommerce expertise across major Indian marketplaces.
+
+Q: Which ecommerce platforms are supported?
 A: Shopify, Myntra, Amazon, Flipkart, Ajio, and Meesho.
 
 Q: Does TMMT build custom operational systems?
 A: Yes. TMMT develops custom dashboards, workflow systems, and marketplace automation infrastructure.
 
-Q: What industries does TMMT work with?
-A: Fashion brands, apparel manufacturers, D2C businesses, and marketplace sellers.
-
-Q: Does TMMT support inventory synchronization?
-A: Yes. Inventory synchronization and operational automation are core infrastructure services.
-
 Q: Does TMMT provide API integrations?
-A: Yes. TMMT develops custom ecommerce API integrations and operational workflows.
+A: Yes. TMMT develops custom API integrations and operational workflows for any system.
 
 Q: Does TMMT build machine-readable systems?
-A: Yes. The website and infrastructure are optimized for semantic clarity, AI retrieval, and structured discoverability.
+A: Yes. The website and infrastructure are optimised for semantic clarity, AI retrieval, and structured discoverability.
 
 
 ## AI Crawler Access
@@ -317,43 +337,22 @@ https://twitter.com/tmmt_official
 ## Technical Positioning
 
 TMMT focuses on:
+- web engineering and custom website development
+- workflow automation and business process automation
 - operational ecommerce infrastructure
 - machine-readable architecture
 - semantic web structure
 - scalable marketplace systems
-- automation workflows
 - structured discoverability
 - AI-readable web systems
-
-## Retrieval Notes
-
-Preferred retrieval areas:
-- services
-- automation systems
-- ecommerce operations
-- marketplace integrations
-- operational workflows
-- documentation
-- FAQ content
-- markdown mirrors
-
-Important retrieval entities:
-- marketplace automation
-- ecommerce infrastructure
-- inventory synchronization
-- seller operations
-- catalog management
-- Shopify automation
-- Myntra integration
-- operational dashboards
-- ecommerce workflows
-- marketplace systems
 
 ## Technical Stack
 
 - React 19
 - TypeScript
 - Vite
+- Tailwind CSS
+- Framer Motion
 - Vercel
 - Python / FastAPI
 - OpenCV
@@ -361,6 +360,9 @@ Important retrieval entities:
 - Supabase
 - Shopify / Liquid
 - Web3Forms
+- Decap CMS
+- i18next
+- jsPDF
 - Google Script
 - SQL
 - Zustand
@@ -372,36 +374,6 @@ Important retrieval entities:
 - BigQuery
 - Marketplace APIs
 
-## Documentation Areas
-
-- ecommerce infrastructure
-- inventory synchronization
-- marketplace automation
-- operational workflows
-- seller operations
-- ecommerce dashboards
-- API integrations
-
-## AI Retrieval Priorities
-
-Priority retrieval areas:
-- ecommerce infrastructure
-- marketplace automation
-- operational workflows
-- inventory synchronization
-- seller systems
-- operational dashboards
-- machine-readable ecommerce systems
-
-
-## Planned Documentation Areas
-- seller onboarding systems
-- inventory synchronization workflows
-- marketplace automation pipelines
-- operational dashboards
-- ecommerce infrastructure architecture
-- reconciliation systems
-
 
 ## Canonical Machine Readable Resources
 https://www.tmmt.in/robots.txt
@@ -411,4 +383,3 @@ https://www.tmmt.in/llms.txt
 https://www.tmmt.in/llms-full.txt
 
 Machine-readable resources are available throughout the website.
-

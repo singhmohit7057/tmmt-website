@@ -102,12 +102,20 @@ const WebDesign: React.FC = () => {
       link: "https://graboffer.vercel.app"
     },
     {
-      label: "PORTFOLIO WEBSITE",
+      label: "BRAND & PORTFOLIO WEBSITE",
       title: "Muskaan Singh",
-      desc: "Personal portfolio for fashion designer Muskaan Singh — minimal, editorial layout with smooth transitions and full mobile responsiveness.",
-      tech: ["React", "Vite", "TypeScript", "Vercel", "Framer Motion", "Web3Forms"],
+      desc: "Brand portfolio for fashion designer Muskaan Singh — founder of Label Muskaan Singh and Ibtida. Editorial layout with Framer Motion animations, Tailwind CSS design system, Git-based admin panel via Decap CMS with GitHub OAuth, and Web3Forms contact integration.",
+      tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Framer Motion", "Decap CMS", "GitHub OAuth", "Web3Forms", "Vercel"],
       image: "/services/muskaansingh.webp",
       link: "https://www.muskaansingh.in"
+    },
+    {
+      label: "COMMUNITY & MEMBERSHIP PLATFORM",
+      title: "Akhil Bharatiya Goswami Sabha",
+      desc: "Full-stack community platform for a Hindu religious organisation in West Bengal. Features a 3-tier admin panel, member directory with downloadable PDF ID cards, matrimonial module, business directory, UPI donations, bilingual English/Hindi UI, and a complete Supabase backend with 63 routed pages.",
+      tech: ["React", "Vite", "TypeScript", "Tailwind CSS", "Supabase", "i18next", "jsPDF", "Vercel"],
+      image: "/services/abgspb.webp",
+      link: "https://akhilbharatiyagoswami.com"
     },
     {
       label: "SAAS PRODUCT",

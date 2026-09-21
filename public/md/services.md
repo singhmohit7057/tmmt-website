@@ -1,6 +1,6 @@
 ---
 title: TMMT Services
-description: Ecommerce automation, web engineering, marketplace infrastructure, branding, ads, and social media
+description: Custom websites, web applications, workflow automation, marketplace infrastructure, branding, ads, and social media
 url: https://www.tmmt.in/services
 canonical: https://www.tmmt.in/services
 ---
@@ -9,15 +9,15 @@ canonical: https://www.tmmt.in/services
 
 ## 01 / Web Engineering
 
-React, TypeScript, and Vite websites built for fast load times, mobile rendering, and Core Web Vitals scores of 100.
+Custom websites, web applications, internal dashboards, and client portals built with React, TypeScript, and Vite — optimised for Core Web Vitals, mobile rendering, and search crawlability.
 
 URL: https://www.tmmt.in/services/web-design
 
-Projects: Ecomsathi, Label Muskaan Singh, Johar Foundation, GrabOffer, Muskaan Singh, WashMate, 100 Year Clock
+Projects: Pawan Industries, Akhil Bharatiya Goswami Sabha, Muskaan Singh, Johar Foundation, WashMate, Jarvis HMS, GrabOffer, Label Muskaan Singh, Ecomsathi, 100 Year Clock
 
-## 02 / Automation
+## 02 / Workflow Automation
 
-Custom Python-FastAPI engines for ecommerce operations — label processing, settlement reconciliation, inventory scrapers, and workflow automation.
+Custom automation pipelines for any repeatable business process — data sync, report generation, notification systems, document generation, and workflow engines that eliminate manual work.
 
 URL: https://www.tmmt.in/services/automation
 
@@ -57,9 +57,11 @@ URL: https://www.tmmt.in/services/social-media
 
 ## Industries
 
-- Fashion Brands
-- D2C Businesses
-- Apparel Manufacturers
+- Any business needing a website or web application
+- Manufacturing and industrial businesses
+- Fashion Brands and D2C Businesses
+- Nonprofits and community organisations
+- Healthcare and clinics
 - Marketplace Sellers
-- Nonprofits
 - SaaS Products
+- Startups

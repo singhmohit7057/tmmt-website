@@ -82,7 +82,7 @@ const Homepage: React.FC = () => {
     },
     {
       title: 'Workflow Automation',
-      desc: 'Inventory synchronization, seller workflows, marketplace automation, and operational systems for scalable ecommerce operations.',
+      desc: 'Custom automation pipelines for any business process — data sync, report generation, notification systems, and workflow engines that eliminate manual work.',
       link: '/services/automation',
       img: '/services/automation.webp'
     },
@@ -94,19 +94,19 @@ const Homepage: React.FC = () => {
     },
     {
       title: 'Branding Systems',
-      desc: 'Brand identity systems and ecommerce-focused visual architecture for fashion brands and D2C businesses.',
+      desc: 'Brand identity systems and visual architecture for businesses that want a consistent, professional presence across every channel.',
       link: '/services/branding',
       img: '/services/brand.webp'
     },
     {
       title: 'Ads Management Systems',
-      desc: 'Data-driven advertising workflows and ecommerce campaign infrastructure for marketplace and D2C brands.',
+      desc: 'Data-driven advertising workflows and campaign infrastructure for businesses looking to grow through paid channels.',
       link: '/services/ads-management',
       img: '/services/performance.webp'
     },
     {
       title: 'Social Media Systems',
-      desc: 'Content systems, social commerce workflows, and brand communication infrastructure for ecommerce businesses.',
+      desc: 'Content systems, scheduling workflows, and brand communication infrastructure built to keep your social presence consistent and active.',
       link: '/services/social-media',
       img: '/services/social.webp'
     }
@@ -134,19 +134,19 @@ const Homepage: React.FC = () => {
   const faqs = [
     {
       q: 'What does TMMT build?',
-      a: 'TMMT engineers custom web applications, internal dashboards, and robust e-commerce automation systems designed to streamline multi-channel operations.'
+      a: 'TMMT builds custom websites, web applications, internal dashboards, and workflow automation systems. Whether you need a business website, a client portal, or automated processes — we engineer it from scratch.'
     },
     {
-      q: 'Does TMMT build custom web applications outside of e-commerce?',
-      a: 'Yes. While we have deep infrastructure roots in e-commerce, our core capability is custom Web Engineering. We build scalable software tools, internal dashboards, and custom API connections for businesses that need tailored digital solutions.'
+      q: 'Can TMMT automate my business processes?',
+      a: 'Yes. We build custom automation for any repeatable business task — data sync between tools, automated reports, notification systems, document generation, and more. If you do it manually more than a few times a week, we can automate it.'
     },
     {
-      q: 'Does TMMT provide inventory synchronization?',
-      a: 'Yes. Real-time inventory synchronization across major marketplaces and seller workflow automation are foundational components of our engineering systems.'
+      q: 'What kinds of websites does TMMT build?',
+      a: 'We build business websites, portfolio sites, service company websites, nonprofit sites, landing pages, and custom web applications. Every build is custom — no templates, no page builders.'
     },
     {
       q: 'What industries does TMMT work with?',
-      a: 'We work with growing D2C brands, fashion labels, enterprise apparel manufacturers, and companies looking to automate manual business processes with custom software.'
+      a: 'We work with businesses across industries — from manufacturing and services to fashion, nonprofits, and startups. If your business needs a strong web presence or better-automated operations, we can help.'
     }
   ];
 
@@ -160,10 +160,10 @@ const Homepage: React.FC = () => {
       }}
     >
       <SEO
-        title="TMMT | Web Engineering & Ecommerce Infrastructure"
-        description="TMMT engineers custom web applications, backend automation platforms, inventory synchronization systems, and data-driven marketplace infrastructure for modern digital brands."
+        title="TMMT | Web Engineering & Workflow Automation"
+        description="TMMT builds custom websites, web applications, and workflow automation systems for businesses. From your first website to internal dashboards and automated business processes."
         path="/"
-        keywords="web engineering, custom web applications, ecommerce automation, marketplace automation, inventory synchronization, seller dashboard, react development, fastapi developer, backend infrastructure"
+        keywords="web engineering, custom websites, workflow automation, business automation, web applications, website design, internal tools, process automation, react development, fastapi, python automation"
         robots="index, follow"
         author="TMMT Team"
         type="website"
@@ -187,7 +187,7 @@ const Homepage: React.FC = () => {
             letterSpacing: '1.2px'
           }}
         >
-          Web Engineering & Operations
+          Web Engineering & Automation
         </span>
 
         <h1
@@ -199,8 +199,8 @@ const Homepage: React.FC = () => {
             lineHeight: isMobile ? 1.2 : 1.1
           }}
         >
-          Custom Web Engineering <br />
-          & Marketplace Infrastructure
+          We Build Websites <br />
+          & Automate Your Workflows
         </h1>
 
         <p
@@ -212,9 +212,8 @@ const Homepage: React.FC = () => {
             lineHeight: 1.6
           }}
         >
-          TMMT engineers production-grade web applications, custom API pipelines, 
-          and automated marketplace infrastructure. We build the dashboards and systems 
-          that replace manual bottlenecks for high-volume D2C and e-commerce enterprises.
+          TMMT designs and engineers custom websites, web applications, and business automation tools.
+          From your first website to internal dashboards and automated workflows — we build what your business needs to run efficiently.
         </p>
 
         <div
@@ -300,114 +299,10 @@ const Homepage: React.FC = () => {
               margin: '0 auto'
             }}
           >
-            Most digital brands hit a wall when scaling across three or four multi-channel nodes. 
-            Data goes out of sync, workflows fail, and custom logic breaks. TMMT engineers the stable web assets 
-            and automated backend layers necessary to clean up technical debt and keep business operations flawless.
+            Most businesses waste hours on tasks that should run automatically. Processes fall apart,
+            data sits in silos, and websites don't convert. TMMT engineers the web infrastructure and
+            automation layers that let your business run without you holding it together.
           </p>
-        </div>
-      </section>
-
-      {/* SUPPORTED PLATFORMS */}
-      <section style={{ ...sectionStyle, paddingTop: '40px' }}>
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-          <span
-            style={{
-              color: COLORS.accent,
-              fontWeight: 600,
-              fontSize: '14px',
-              letterSpacing: '1.2px',
-              textTransform: 'uppercase'
-            }}
-          >
-            Integrations Ecosystem
-          </span>
-          <h2
-            style={{
-              fontSize: isMobile ? '30px' : '42px',
-              fontWeight: 600
-            }}
-          >
-            Supported Platforms
-          </h2>
-
-          <p
-            style={{
-              color: COLORS.subtext,
-              fontSize: isMobile ? '16px' : '18px'
-            }}
-          >
-            Engineered integrations and ecosystem connections.
-          </p>
-        </div>
-
-        <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            gap: isMobile ? '16px' : '24px',
-            marginTop: '40px',
-            maxWidth: '1200px',
-            marginInline: 'auto'
-          }}
-        >
-          {platforms.map((platform, i) => (
-            <div
-              key={i}
-              style={{
-                width: isMobile ? '140px' : '165px',
-                minHeight: isMobile ? '140px' : '170px',
-                backgroundColor: COLORS.bgLight,
-                border: `1px solid ${COLORS.border}`,
-                borderRadius: '28px',
-                padding: isMobile ? '20px' : '28px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '14px',
-                transition: 'all 0.25s ease',
-                boxSizing: 'border-box'
-              }}
-              onMouseEnter={(e) => {
-                if (!isMobile) {
-                  e.currentTarget.style.transform = 'translateY(-6px)';
-                  e.currentTarget.style.boxShadow =
-                    '0 20px 40px rgba(0,0,0,0.08)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            >
-              <img
-                src={platform.logo}
-                alt={platform.name}
-                loading="lazy"
-                width="60"
-                height="60"
-                style={{
-                  width: isMobile ? '50px' : '62px',
-                  height: isMobile ? '50px' : '62px',
-                  objectFit: 'contain',
-                  display: 'block'
-                }}
-              />
-
-              <span
-                style={{
-                  fontSize: isMobile ? '14px' : '16px',
-                  fontWeight: 600,
-                  color: COLORS.text,
-                  textAlign: 'center',
-                  lineHeight: 1.4
-                }}
-              >
-                {platform.name}
-              </span>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -752,6 +647,102 @@ const Homepage: React.FC = () => {
         </div>
       </section>
 
+      {/* ECOMMERCE PLATFORMS */}
+      <section style={{ ...sectionStyle, backgroundColor: COLORS.bgLight }}>
+        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+          <span
+            style={{
+              color: COLORS.accent,
+              fontWeight: 600,
+              fontSize: '14px',
+              letterSpacing: '1.2px',
+              textTransform: 'uppercase'
+            }}
+          >
+            Ecommerce Expertise
+          </span>
+          <h2
+            style={{
+              fontSize: isMobile ? '30px' : '42px',
+              fontWeight: 600,
+              margin: '14px 0 10px'
+            }}
+          >
+            Marketplace Integrations
+          </h2>
+          <p style={{ color: COLORS.subtext, fontSize: isMobile ? '16px' : '18px', margin: 0 }}>
+            Deep integration experience across India's major ecommerce platforms.
+          </p>
+        </div>
+
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: isMobile ? '16px' : '24px',
+            maxWidth: '1200px',
+            marginInline: 'auto'
+          }}
+        >
+          {platforms.map((platform, i) => (
+            <div
+              key={i}
+              style={{
+                width: isMobile ? '140px' : '165px',
+                minHeight: isMobile ? '140px' : '170px',
+                backgroundColor: COLORS.white,
+                border: `1px solid ${COLORS.border}`,
+                borderRadius: '28px',
+                padding: isMobile ? '20px' : '28px',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '14px',
+                transition: 'all 0.25s ease',
+                boxSizing: 'border-box'
+              }}
+              onMouseEnter={(e) => {
+                if (!isMobile) {
+                  e.currentTarget.style.transform = 'translateY(-6px)';
+                  e.currentTarget.style.boxShadow = '0 20px 40px rgba(0,0,0,0.08)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            >
+              <img
+                src={platform.logo}
+                alt={platform.name}
+                loading="lazy"
+                width="60"
+                height="60"
+                style={{
+                  width: isMobile ? '50px' : '62px',
+                  height: isMobile ? '50px' : '62px',
+                  objectFit: 'contain',
+                  display: 'block'
+                }}
+              />
+              <span
+                style={{
+                  fontSize: isMobile ? '14px' : '16px',
+                  fontWeight: 600,
+                  color: COLORS.text,
+                  textAlign: 'center',
+                  lineHeight: 1.4
+                }}
+              >
+                {platform.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CTA SECTION */}
       <section
         style={{
@@ -767,7 +758,7 @@ const Homepage: React.FC = () => {
             lineHeight: 1.1
           }}
         >
-          Build High-Performance Digital Infrastructure.
+          Build Your Website. Automate Your Business.
         </h2>
 
         <p
@@ -779,7 +770,7 @@ const Homepage: React.FC = () => {
             lineHeight: 1.7
           }}
         >
-          Custom web engineering, robust marketplace frameworks, inventory logic engines, and production architectures engineered for scale.
+          Custom websites, web applications, and workflow automation — engineered to work reliably from day one.
         </p>
 
         <button

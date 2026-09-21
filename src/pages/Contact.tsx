@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
       {/* SEO */}
       <SEO
         title="Contact TMMT"
-        description="Contact TMMT for ecommerce infrastructure systems, marketplace automation workflows, inventory synchronization systems, operational dashboards, and scalable commerce operations."
+        description="Contact TMMT to start a project — custom websites, web applications, workflow automation, or anything your business needs built properly."
         path="/contact"
         ogImage="/tmmt-logo.webp"
       />
@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
             logo: 'https://www.tmmt.in/tmmt-logo.webp',
             email: 'themadmysteryteam@gmail.com',
             description:
-              'TMMT builds ecommerce infrastructure systems, marketplace automation workflows, operational dashboards, and scalable commerce operations.',
+              'TMMT builds custom websites, web applications, internal tools, and workflow automation systems for businesses of all kinds.',
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Kolkata',
@@ -143,7 +143,7 @@ const Contact: React.FC = () => {
                 maxWidth: '320px'
               }}
             >
-              Drop us a message about your ecommerce setup. We'll take it from there.
+              Tell us what you need built or automated. We'll take it from there.
             </p>
           )}
 
@@ -158,7 +158,7 @@ const Contact: React.FC = () => {
                 textAlign: 'center'
               }}
             >
-              Whether it's inventory sync, marketplace setup, automation, or something you can't quite name yet — tell us what's going wrong and we'll figure out if we can fix it.
+              Whether it's a website, an internal tool, workflow automation, or something you can't quite name yet — tell us what you need and we'll figure out if we can build it.
             </p>
           )}
 

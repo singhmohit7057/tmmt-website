@@ -1,6 +1,6 @@
 # TMMT
 
-> Ecommerce infrastructure and marketplace automation systems for D2C and fashion brands.
+> Web engineering and automation studio — custom websites, web applications, and workflow automation systems for businesses.
 
 ## Core Pages
 
@@ -13,7 +13,7 @@
 ## Service Pages
 
 - [Web Design & Engineering](https://www.tmmt.in/services/web-design)
-- [Ecommerce Automation](https://www.tmmt.in/services/automation)
+- [Workflow Automation](https://www.tmmt.in/services/automation)
 - [Marketplace Operations](https://www.tmmt.in/services/ecommerce-help)
 - [Brand Architecture](https://www.tmmt.in/services/branding)
 - [Social Media Management](https://www.tmmt.in/services/social-media)
